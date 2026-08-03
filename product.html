@@ -1,0 +1,404 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Tykea | Scandi Wooden Coffee Table</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&amp;family=Manrope:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100..900&amp;family=Manrope:wght@100..900&amp;display=swap" rel="stylesheet">
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .scrollbar-hide::-webkit-scrollbar { display: none; }
+    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+    
+    .tab-active {
+      border-bottom: 2px solid #6f4627;
+      color: #1c1b1b;
+      font-weight: 600;
+    }
+  </style>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-variant": "#e5e2e1",
+            "secondary-fixed": "#e8e1da",
+            "on-secondary-fixed": "#1e1b17",
+            "outline": "#83746b",
+            "on-secondary-container": "#66625c",
+            "inverse-on-surface": "#f3f0ef",
+            "on-background": "#1c1b1b",
+            "on-error-container": "#93000a",
+            "tertiary": "#755b00",
+            "error-container": "#ffdad6",
+            "on-secondary-fixed-variant": "#4a4641",
+            "primary-fixed": "#ffdcc5",
+            "primary": "#6f4627",
+            "on-tertiary-fixed-variant": "#594400",
+            "surface-container": "#f0eded",
+            "inverse-surface": "#313030",
+            "on-secondary": "#ffffff",
+            "surface-container-lowest": "#ffffff",
+            "on-surface": "#1c1b1b",
+            "primary-container": "#8b5e3c",
+            "secondary-fixed-dim": "#ccc6be",
+            "on-error": "#ffffff",
+            "secondary": "#625e58",
+            "on-tertiary": "#ffffff",
+            "surface-container-highest": "#e5e2e1",
+            "surface-container-high": "#eae7e7",
+            "primary-fixed-dim": "#f4bb92",
+            "inverse-primary": "#f4bb92",
+            "on-tertiary-container": "#503d00",
+            "error": "#ba1a1a",
+            "on-primary-fixed-variant": "#653d1e",
+            "surface-container-low": "#f6f3f2",
+            "background": "#fcf9f8",
+            "surface-tint": "#805533",
+            "secondary-container": "#e5dfd7",
+            "on-primary": "#ffffff",
+            "tertiary-fixed-dim": "#f2c025",
+            "on-tertiary-fixed": "#241a00",
+            "tertiary-fixed": "#ffdf92",
+            "surface-dim": "#dcd9d9",
+            "surface-bright": "#fcf9f8",
+            "on-primary-fixed": "#301400",
+            "tertiary-container": "#d3a500",
+            "on-primary-container": "#ffe3d1",
+            "surface": "#fcf9f8",
+            "on-surface-variant": "#51443c",
+            "outline-variant": "#d5c3b8"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "unit-xl": "64px",
+            "gutter": "24px",
+            "container-max": "1280px",
+            "unit-lg": "32px",
+            "margin-mobile": "20px",
+            "unit-md": "16px",
+            "unit-sm": "8px",
+            "unit-xs": "4px",
+            "margin-desktop": "64px"
+          },
+          "fontFamily": {
+            "body-lg": ["Manrope"],
+            "body-md": ["Manrope"],
+            "headline-lg": ["DM Sans"],
+            "label-sm": ["Manrope"],
+            "headline-lg-mobile": ["DM Sans"],
+            "label-md": ["Manrope"],
+            "headline-md": ["DM Sans"],
+            "display-lg": ["DM Sans"]
+          },
+          "fontSize": {
+            "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+            "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+            "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+            "label-sm": ["12px", {"lineHeight": "1.4", "fontWeight": "500"}],
+            "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "600"}],
+            "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "600"}],
+            "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+            "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+          }
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar Component -->
+<header class="fixed top-0 w-full z-50 bg-surface border-b border-outline-variant">
+<nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="flex items-center gap-12">
+<a class="text-headline-md font-headline-md font-bold text-on-surface" href="index.html">tykea</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-headline-md font-headline-md font-bold text-on-surface" href="index.html">collection</a>
+<a class="text-label-md font-label-md text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="about.html">about</a>
+<a class="text-label-md font-label-md text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="#">blog</a>
+<a class="text-label-md font-label-md text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="return.html">returns &amp; refunds</a>
+</div>
+</div>
+<div class="flex items-center gap-unit-md">
+<div class="hidden lg:flex items-center gap-4 mr-4">
+<a class="text-headline-md font-headline-md font-bold text-on-surface" href="index.html">login</a>
+</div>
+<div class="flex items-center gap-5">
+<button class="hover:text-primary transition-colors"><span class="material-symbols-outlined" data-icon="favorite">favorite</span></button>
+<a href="cart.html" class="hover:text-primary transition-colors relative"><span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span><span class="absolute -top-1 -right-1 bg-primary text-on-primary text-[10px] w-4 h-4 flex items-center justify-center rounded-full font-bold">1</span></a>
+<button class="hover:text-primary transition-colors"><span class="material-symbols-outlined" data-icon="person">person</span></button>
+<button class="md:hidden"><span class="material-symbols-outlined" data-icon="menu">menu</span></button>
+</div>
+</div>
+</nav>
+</header>
+<main class="pt-24 pb-unit-xl">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Product Hero Section -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-unit-xl items-start">
+<!-- Left: Image Gallery -->
+<div class="lg:col-span-7 flex flex-col gap-unit-md">
+<div class="aspect-[4/3] w-full bg-surface-container-low overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A professional studio photograph of a low-profile Scandi wooden coffee table made of light oak, featuring a smooth circular top and three elegant tapered legs. The setting is a minimalist, warm sunlit living room with neutral tones, cream textiles, and soft ambient light emphasizing the natural wood grain and organic texture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNAEHRg4S8sCnrDozu3OBci9EkSDhaYGdLVhR9NM-JGQIStypX7coJmc77aL0dgsIUH8P4HWMOLhRYQqlO5i-P6XL48dt04pruLFlSCLDqQ9cZEuJ6sq-aTRXkDBTyBrr2Fah3Ei5KLpHfuskFtcxAFioHe_iOBlQlyKBmYBTVj68YYb1zaZ8jSnNBNlB71AisNZOwyAFclU9zMu0aBfSQyw3G_7tqXdl_f1rHK4KXPLY3rKjCz4zqwA">
+</div>
+<div class="grid grid-cols-3 gap-unit-md">
+<div class="aspect-square bg-surface-container-low cursor-pointer ring-2 ring-primary ring-offset-2 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Close-up detail of the smooth light oak surface of a Scandi coffee table, showing the intricate natural wood grain patterns and soft rounded edges under warm afternoon light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWp_0PoUFjjvNvANGJafoMRzvN89PQsLLuoWYai2H_KSEttgoZ6h5fKIpuXHMnuBll2wOL_ZNTjEf4ZE14_lj6ASd2uSXzu4jmVcHafj4Mo371fbUwKSCRc5IEklH-GmrFkmUiy_YkuAqkX5bQjdQyUPYgG4x5bL1VaqAnDaeNaXj0ucjIWFcIKL53UDQ0BVQew04j4hBSqAiMfaV3WZq83oFaDhsYdW8aBgbCH7-xffy0gN1_icV1oA">
+</div>
+<div class="aspect-square bg-surface-container-low cursor-pointer hover:opacity-80 transition-opacity overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Angle view of the tapered legs of a minimalist wooden coffee table, highlighting the architectural joinery and sturdy construction in a bright, modern interior setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCecI7W87lQqcalKAFp9rFP1rweweSTAzoEvhc1k5gOfSYPg7YYwbq703EPotb6DXOSv35eEIjnTjmdIjJJsHVXSAKwwRAlh3YWSaklN_TjZDIgEEEfCBbFKG2gv9vUlLfKmoMCIrRWfwqQAFdPiGWlhi2YzEI_qKz1P9Y0M_TJQdM8RXfkXeBput-lC_u_rCtKMmYTML23lYS9KBQ0zNQGsyx6mAnYXeh64fNBx_JqN0iH-doG2Xi7Ng">
+</div>
+<div class="aspect-square bg-surface-container-low cursor-pointer hover:opacity-80 transition-opacity overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Stylized top-down view of a Scandi wooden coffee table featuring a small ceramic vase and a minimalist book, set against a soft textured rug in a serene living space." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXXCcge4yHmHDjxKro9zZDLHpwtyAbCqDfLfJYix1u4d-mTlQ7twnJjjQf_8Le2juZXlbDhkcPKB6fiNmX3vrMhoW31Jjas2rPK1Tw7l9_YlQjHEtXgCPW15HwhV7o8_I1ttNNVtf4nxNIYJcEsk2IO_iJ8aKKqS0vGqYwTkC_F8Qrd0qg6QZ_ctkBuFYYlfKMBzpFukcUdrS6uhC2ewqtx2QeqzMONHIS3zIXj2YfIwYme323WlscrA">
+</div>
+</div>
+</div>
+<!-- Right: Product Information -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<div class="space-y-4">
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Scandi Wooden Coffee Table</h1>
+<div class="flex items-center gap-2">
+<div class="flex text-tertiary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<span class="text-label-md font-label-md text-on-surface-variant">(120 Reviews)</span>
+</div>
+<div class="text-headline-lg font-headline-lg text-primary">$249</div>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+              Modern, minimalistic coffee table with storage shelf and drawer. Perfect for your living room. Crafted from sustainably sourced solid oak with a matte protective finish.
+            </p>
+</div>
+<div class="h-[1px] bg-outline-variant"></div>
+<!-- Attributes -->
+<div class="space-y-6">
+<div>
+<span class="text-label-md font-label-md block mb-3 uppercase tracking-wider">Colour: <span class="text-on-surface-variant font-medium">Light Oak</span></span>
+<div class="flex gap-3">
+<button aria-label="Light Oak" class="w-8 h-8 rounded-full bg-[#E8DCC4] border-2 border-primary ring-2 ring-offset-2 ring-transparent transition-all"></button>
+<button aria-label="Medium Walnut" class="w-8 h-8 rounded-full bg-[#8B5E3C] hover:scale-110 transition-all"></button>
+<button aria-label="Dark Espresso" class="w-8 h-8 rounded-full bg-[#4A3728] hover:scale-110 transition-all"></button>
+<button aria-label="Ash Gray" class="w-8 h-8 rounded-full bg-[#D1D1D1] hover:scale-110 transition-all"></button>
+</div>
+</div>
+<div>
+<span class="text-label-md font-label-md block mb-3 uppercase tracking-wider">Size: <span class="text-on-surface-variant font-medium">40" x 24"</span></span>
+<div class="flex flex-wrap gap-2">
+<button class="px-6 py-2 border-2 border-primary text-primary font-bold text-label-md">40" x 24"</button>
+<button class="px-6 py-2 border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary transition-all text-label-md">48" x 30"</button>
+</div>
+</div>
+</div>
+<!-- Purchase Controls -->
+<div class="flex flex-col gap-4 mt-4">
+<div class="flex items-center gap-4">
+<div class="inline-flex items-center border border-outline-variant h-14 bg-surface">
+<button class="w-12 h-full flex items-center justify-center hover:bg-surface-container transition-colors" onclick="this.nextElementSibling.innerText = Math.max(1, parseInt(this.nextElementSibling.innerText) - 1)">
+<span class="material-symbols-outlined">remove</span>
+</button>
+<span class="w-12 text-center font-bold text-body-md">1</span>
+<button class="w-12 h-full flex items-center justify-center hover:bg-surface-container transition-colors" onclick="this.previousElementSibling.innerText = parseInt(this.previousElementSibling.innerText) + 1">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+<a href="cart.html" class="flex-1 h-14 bg-tertiary-container hover:bg-tertiary text-on-tertiary-container hover:text-on-tertiary font-bold transition-all flex items-center justify-center gap-2 group">add to cart <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">shopping_cart</span></a>
+<button class="w-14 h-14 border border-outline-variant flex items-center justify-center hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+<!-- Shipping info -->
+<div class="flex gap-6 mt-2">
+<div class="flex items-center gap-2 text-label-sm font-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">local_shipping</span>
+              Free local delivery
+            </div>
+<div class="flex items-center gap-2 text-label-sm font-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+              2 Year Warranty
+            </div>
+</div>
+</div>
+</section>
+<!-- Tabs Section -->
+<section class="mt-20 border-t border-outline-variant">
+<div class="flex overflow-x-auto scrollbar-hide border-b border-outline-variant">
+<button class="px-8 py-5 text-label-md font-label-md whitespace-nowrap tab-active">Description</button>
+<button class="px-8 py-5 text-label-md font-label-md whitespace-nowrap text-on-surface-variant hover:text-primary transition-colors">Specification</button>
+<button class="px-8 py-5 text-label-md font-label-md whitespace-nowrap text-on-surface-variant hover:text-primary transition-colors">Reviews (120)</button>
+<button class="px-8 py-5 text-label-md font-label-md whitespace-nowrap text-on-surface-variant hover:text-primary transition-colors">Delivery &amp; Return</button>
+</div>
+<div class="py-10 max-w-3xl">
+<p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed">
+            Modern Scandinavian-style coffee table with a clean wooden finish. Features a smart drawer and open shelf for easy storage. Perfect for minimalist and contemporary living rooms. The low profile design creates an airy feeling in smaller spaces while providing substantial surface area for daily use.
+          </p>
+<ul class="mt-8 space-y-3">
+<li class="flex items-start gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'wght' 600;">check_circle</span>
+<span class="">Crafted from certified FSC Solid Oak wood.</span>
+</li>
+<li class="flex items-start gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'wght' 600;">check_circle</span>
+<span class="">Easy 15-minute assembly with all tools included.</span>
+</li>
+<li class="flex items-start gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'wght' 600;">check_circle</span>
+<span class="">Hand-finished with a clear matte lacquer for durability.</span>
+</li>
+</ul>
+</div>
+</section>
+<!-- Related Products -->
+<section class="mt-20">
+<div class="flex items-center justify-between mb-unit-lg">
+<h2 class="font-headline-md text-headline-md text-on-surface">You May Also Like</h2>
+<div class="flex gap-4">
+<button class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter">
+<!-- Card 1 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[3/4] bg-surface-container-low overflow-hidden mb-4">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A stylish Nordic-style lounge chair with a curved light wood frame and cream boucle fabric upholstery. The chair is positioned in a serene corner of a modern apartment with large windows and soft natural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCu_XJV0fQmY3DKC7bVKY6Yy21aB15hjLt2d5ROOSAR389arQh13I3pjVYH3zXL_sKm7Z3Jihl_8lIumJBKxlIw8_7Lz6h31vufgYmcvBk2NPDx133BI0dbYtnZ3b5-xT7Pn79Wpn9vIyoiX545OWjWXElGXhV0YTW3A1YnKTTtA9rzwu-AHfN5ZYJGOzaHSurIe2kX3DIiGEUJqcb-HePwgYDApZgZfSYRFcn75ze8z2H7xROaqcodzg">
+<span class="absolute top-4 left-4 bg-primary-container text-on-primary-container px-3 py-1 text-label-sm font-label-sm">New</span>
+</div>
+<h3 class="font-label-md text-label-md text-on-surface mb-1">Nordic Lounge Chair</h3>
+<p class="font-label-md text-label-md text-on-surface-variant">$ 330</p>
+</div>
+<!-- Card 2 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[3/4] bg-surface-container-low overflow-hidden mb-4">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A minimalist solid wood side table in a light ash finish, standing beside a plush sofa. The image captures the elegant simplicity and functional design characteristic of warm minimalist aesthetics." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKpxgN5H14vJqQAjZVzKBWtEZYcCTTT5Mw1mkg-5_waBahqB1MNYCFAxF-8JZTXtvVg6j5lY3l-4P1EsetPVot5mGmMo23kbay1jZt2BuiV5LWimdo99fzcO8-6nMH10l7fOWIEDGRbyYUbgmiuv4079kYQPPgjRsSMHxjRMxMlY0GJpgQch_rmg7vNXvvfLo5t2yVqONWqgQhPLJTXfIG_F_ReWoCrMwdU9R8XLanRvLcvj9uwjJ8wQ">
+</div>
+<h3 class="font-label-md text-label-md text-on-surface mb-1">Oak Side Table</h3>
+<p class="font-label-md text-label-md text-on-surface-variant">$ 120</p>
+</div>
+<!-- Card 3 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[3/4] bg-surface-container-low overflow-hidden mb-4">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A contemporary woven floor rug in soft oatmeal tones, featuring a subtle geometric relief texture. It is placed on a light hardwood floor in a bright, airy designer living room." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAz2Pr8ZEm9lcQSB9NFLsKeYjNhAyZ_2HYnrDenCmHXlmQQzXoEjEQjtY8C58NkEsg9Ys3CIAK4Ah3HVxn37KkGsBtlRnMotsF_0VJNgXRxomP0HUJwTpA7Qjt47BfTPbe1O6uy8LGaEFUoYXStHNLsxgRIXA56qSsGgu8jSX78vN77WDhPiwYM_fu6Fze-4OxU2WqIJ7gZJV9jQjJndAMb-P8sQE4Mmsl9vazh7J-4qNGQXeHhkYpOkQ">
+<span class="absolute top-4 left-4 bg-tertiary-container text-on-tertiary-container px-3 py-1 text-label-sm font-label-sm">Sale</span>
+</div>
+<h3 class="font-label-md text-label-md text-on-surface mb-1">Textured Wool Rug</h3>
+<p class="font-label-md text-label-md text-on-surface-variant">$ 450</p>
+</div>
+<!-- Card 4 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[3/4] bg-surface-container-low overflow-hidden mb-4">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A modern designer floor lamp with a slender black metal frame and a soft white linen drum shade, illuminating a cozy reading nook with warm, diffused light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTauSgqc6EbTLjZV0hPJ-EtzbOcw7KSlNxb_kcc6kl8SNLzQor580IGzral2nWbSQRJ0S9ZmZb0t0FcS-Ae9HQGScUqbjt3IRULteOMcuu1Ut1P_CtcIx3A552OmwaLTe5SE7gzmJl7ygkgip_4OFAA_ZnziKZZRWmd8mYtJpa05XCZ3dMPQIc31gzbpVOS1Uhf0TlkyDpdsLvAcBVtTnd3SJ62ogbc4Z3isKIMWP3b0dWEmokKAl6Zg">
+</div>
+<h3 class="font-label-md text-label-md text-on-surface mb-1">Archival Floor Lamp</h3>
+<p class="font-label-md text-label-md text-on-surface-variant">$ 210</p>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer Component -->
+<footer class="bg-secondary-container text-on-secondary-container">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-unit-xl">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-unit-lg">
+<div class="col-span-1 md:col-span-1">
+<a href="index.html" class="text-headline-md font-headline-md font-bold text-on-secondary-container mb-6 block">tykea</a>
+<p class="text-body-md font-body-md text-on-secondary-container mb-8 max-w-xs">
+            Relax in style with sofas &amp; sectionals. Keep things organized with smart storage solutions.
+          </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 flex items-center justify-center border border-on-secondary-container rounded-full hover:bg-on-secondary-container hover:text-secondary-container transition-all" href="#">
+<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+</a>
+<a class="w-10 h-10 flex items-center justify-center border border-on-secondary-container rounded-full hover:bg-on-secondary-container hover:text-secondary-container transition-all" href="#">
+<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.332 3.608 1.308.975.975 1.245 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.332 2.633-1.308 3.608-.975.975-2.242 1.245-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.332-3.608-1.308-.975-.975-1.245-2.242-1.308-3.608-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.062-1.366.332-2.633 1.308-3.608.975-.975 2.242-1.245 3.608-1.308 1.266-.058 1.646-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-1.277.057-2.15.26-2.914.557-.79.307-1.458.718-2.124 1.384s-1.077 1.334-1.384 2.124c-.297.764-.5 1.637-.557 2.914-.059 1.28-.073 1.688-.073 4.947s.014 3.667.072 4.947c.057 1.277.26 2.15.557 2.914.307.79.718 1.458 1.384 2.124s1.334 1.077 2.124 1.384c.764.297 1.637.5 2.914.557 1.28.059 1.688.073 4.947.073s3.667-.014 4.947-.072c1.277-.057 2.15-.26 2.914-.557.79-.307 1.458-.718 2.124-1.384s1.077-1.334 1.384-2.124c.297-.764.5-1.637.557-2.914.059-1.28.073-1.688.073-4.947s-.014-3.667-.072-4.947c-.057-1.277-.26-2.15-.557-2.914-.307-.79-.718-1.458-1.384-2.124s-1.334-1.077-2.124-1.384c-.764-.297-1.637-.5-2.914-.557-1.28-.059-1.688-.073-4.947-.073z"></path></svg>
+</a>
+<a class="w-10 h-10 flex items-center justify-center border border-on-secondary-container rounded-full hover:bg-on-secondary-container hover:text-secondary-container transition-all" href="#">
+<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</a>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="text-headline-sm font-headline-md mb-6">Explore</h4>
+<ul class="space-y-3">
+<li class=""><a class="text-label-md font-label-md hover:text-primary transition-all" href="#">Living Room</a></li>
+<li class=""><a class="text-label-md font-label-md hover:text-primary transition-all" href="#">Bedroom</a></li>
+<li class=""><a class="text-label-md font-label-md hover:text-primary transition-all" href="#">Home Office</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="text-headline-sm font-headline-md mb-6">Company</h4>
+<ul class="space-y-3">
+<li class=""><a class="text-label-md font-label-md hover:text-primary transition-all" href="#">Careers</a></li>
+<li class=""><a class="text-label-md font-label-md hover:text-primary transition-all" href="about.html">about us</a></li>
+<li class=""><a class="text-label-md font-label-md hover:text-primary transition-all" href="#">Blogs</a></li>
+<li class=""><a class="text-label-md font-label-md hover:text-primary transition-all" href="#">Contact</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="text-headline-sm font-headline-md mb-6">Support</h4>
+<ul class="space-y-3">
+<li class=""><a class="text-label-md font-label-md hover:text-primary transition-all" href="#">Order Tracking</a></li>
+<li class=""><a class="text-label-md font-label-md hover:text-primary transition-all" href="#">Customer support</a></li>
+<li class=""><a class="text-label-md font-label-md hover:text-primary transition-all" href="#">Privacy Policy</a></li>
+<li class=""><a class="text-label-md font-label-md hover:text-primary transition-all" href="#">Shipping &amp; Taxes</a></li>
+</ul>
+</div>
+</div>
+<div class="mt-unit-xl pt-8 border-t border-on-secondary-fixed-variant flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-label-sm font-label-sm">© 2024 Tykea Furniture. All rights reserved.</p>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-[32px]">payments</span>
+<span class="material-symbols-outlined text-[32px]">account_balance_wallet</span>
+<span class="material-symbols-outlined text-[32px]">credit_card</span>
+</div>
+</div>
+</div>
+</footer>
+<script>
+    // Simple tab switching logic
+    document.querySelectorAll('.tab-active').forEach(tab => {
+      tab.addEventListener('click', function(e) {
+        document.querySelectorAll('.tab-active').forEach(t => {
+          t.classList.remove('tab-active');
+          t.classList.add('text-on-surface-variant');
+        });
+        this.classList.add('tab-active');
+        this.classList.remove('text-on-surface-variant');
+      });
+    });
+
+    // Thumbnail switching simulation
+    const mainImg = document.querySelector('section img');
+    document.querySelectorAll('.aspect-square img').forEach(thumb => {
+      thumb.parentElement.addEventListener('click', () => {
+        // Swap src (in a real app we'd swap data-alt too)
+        const tempSrc = mainImg.src;
+        mainImg.src = thumb.src;
+        
+        // Visual feedback
+        document.querySelectorAll('.aspect-square').forEach(p => p.classList.remove('ring-2', 'ring-primary', 'ring-offset-2'));
+        thumb.parentElement.classList.add('ring-2', 'ring-primary', 'ring-offset-2');
+      });
+    });
+  </script>
+
+
+
+
+</body></html>

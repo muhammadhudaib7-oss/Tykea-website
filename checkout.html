@@ -1,0 +1,335 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Tykea - Shipping &amp; Payment</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&amp;family=Manrope:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind Theme Config -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#e5e2e1",
+                    "secondary-fixed": "#e8e1da",
+                    "on-secondary-fixed": "#1e1b17",
+                    "outline": "#83746b",
+                    "on-secondary-container": "#66625c",
+                    "inverse-on-surface": "#f3f0ef",
+                    "on-background": "#1c1b1b",
+                    "on-error-container": "#93000a",
+                    "tertiary": "#755b00",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed-variant": "#4a4641",
+                    "primary-fixed": "#ffdcc5",
+                    "primary": "#6f4627",
+                    "on-tertiary-fixed-variant": "#594400",
+                    "surface-container": "#f0eded",
+                    "inverse-surface": "#313030",
+                    "on-secondary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface": "#1c1b1b",
+                    "primary-container": "#8b5e3c",
+                    "secondary-fixed-dim": "#ccc6be",
+                    "on-error": "#ffffff",
+                    "secondary": "#625e58",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-highest": "#e5e2e1",
+                    "surface-container-high": "#eae7e7",
+                    "primary-fixed-dim": "#f4bb92",
+                    "inverse-primary": "#f4bb92",
+                    "on-tertiary-container": "#503d00",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed-variant": "#653d1e",
+                    "surface-container-low": "#f6f3f2",
+                    "background": "#fcf9f8",
+                    "surface-tint": "#805533",
+                    "secondary-container": "#e5dfd7",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed-dim": "#f2c025",
+                    "on-tertiary-fixed": "#241a00",
+                    "tertiary-fixed": "#ffdf92",
+                    "surface-dim": "#dcd9d9",
+                    "surface-bright": "#fcf9f8",
+                    "on-primary-fixed": "#301400",
+                    "tertiary-fixed": "#ffdf92",
+                    "surface": "#fcf9f8",
+                    "on-surface-variant": "#51443c",
+                    "outline-variant": "#d5c3b8"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "unit-xl": "64px",
+                    "gutter": "24px",
+                    "container-max": "1280px",
+                    "unit-lg": "32px",
+                    "margin-mobile": "20px",
+                    "unit-md": "16px",
+                    "unit-sm": "8px",
+                    "unit-xs": "4px",
+                    "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Manrope"],
+                    "body-md": ["Manrope"],
+                    "headline-lg": ["DM Sans"],
+                    "label-sm": ["Manrope"],
+                    "headline-lg-mobile": ["DM Sans"],
+                    "label-md": ["Manrope"],
+                    "headline-md": ["DM Sans"],
+                    "display-lg": ["DM Sans"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        input::placeholder, textarea::placeholder {
+            color: #83746b;
+            opacity: 0.6;
+        }
+        .custom-shadow {
+            box-shadow: 0px 10px 30px rgba(0,0,0,0.03);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- TopNavBar -->
+<nav class="bg-surface border-b border-outline-variant fixed top-0 w-full z-50">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="flex items-center gap-unit-lg">
+<a class="text-headline-md font-headline-md font-bold text-on-surface" href="index.html">Tykea</a>
+<div class="hidden md:flex items-center gap-unit-md ml-unit-xl">
+<a class="text-label-md font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="collection.html">collection</a>
+<a class="text-label-md font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="about.html">about</a>
+<a class="text-label-md font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">blog</a>
+<a class="text-label-md font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="return.html">returns &amp; refunds</a>
+</div>
+</div>
+<div class="flex items-center gap-unit-md">
+<div class="hidden md:flex items-center gap-unit-sm mr-unit-sm">
+<button class="p-2 hover:bg-surface-container rounded-full transition-colors">
+<span class="material-symbols-outlined text-on-surface">search</span>
+</button>
+<button class="p-2 hover:bg-surface-container rounded-full transition-colors">
+<span class="material-symbols-outlined text-on-surface">favorite</span>
+</button>
+<a class="text-label-md font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">blog</a>
+</div>
+<button class="text-label-md font-label-md text-on-surface hover:text-primary transition-colors px-4 py-2">Login</button>
+</div>
+</div>
+</nav>
+<main class="pt-24 pb-unit-xl max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<header class="mb-unit-lg">
+<h1 class="text-display-lg font-display-lg text-on-surface mb-2">Shipping</h1>
+<div class="h-px bg-outline-variant w-full"></div>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-unit-xl items-start">
+<!-- Left Column: Checkout Details -->
+<form class="lg:col-span-8 space-y-unit-lg bg-secondary-container/30 p-unit-lg rounded-lg border border-outline-variant/30" action="checkout.html">
+<!-- Billing Details Section -->
+<section>
+<h2 class="text-headline-md font-headline-md text-on-surface mb-6">Billing Details</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-unit-md">
+<div class="space-y-1">
+<input class="w-full h-12 px-4 bg-surface border border-outline-variant rounded focus:border-primary focus:ring-1 focus:ring-primary outline-none text-body-md" placeholder="First Name" type="text">
+</div>
+<div class="space-y-1">
+<input class="w-full h-12 px-4 bg-surface border border-outline-variant rounded focus:border-primary focus:ring-1 focus:ring-primary outline-none text-body-md" placeholder="Last Name" type="text">
+</div>
+<div class="space-y-1">
+<input class="w-full h-12 px-4 bg-surface border border-outline-variant rounded focus:border-primary focus:ring-1 focus:ring-primary outline-none text-body-md" placeholder="Email Address" type="email">
+</div>
+<div class="space-y-1">
+<input class="w-full h-12 px-4 bg-surface border border-outline-variant rounded focus:border-primary focus:ring-1 focus:ring-primary outline-none text-body-md" placeholder="Town / City" type="text">
+</div>
+<div class="space-y-1">
+<input class="w-full h-12 px-4 bg-surface border border-outline-variant rounded focus:border-primary focus:ring-1 focus:ring-primary outline-none text-body-md" placeholder="Country" type="text">
+</div>
+<div class="space-y-1">
+<input class="w-full h-12 px-4 bg-surface border border-outline-variant rounded focus:border-primary focus:ring-1 focus:ring-primary outline-none text-body-md" placeholder="Nearby Famous Place" type="text">
+</div>
+</div>
+</section>
+<!-- Street Address Section -->
+<section>
+<h2 class="text-headline-md font-headline-md text-on-surface mb-6">Street Address</h2>
+<div class="space-y-unit-md">
+<input class="w-full h-12 px-4 bg-surface border border-outline-variant rounded focus:border-primary focus:ring-1 focus:ring-primary outline-none text-body-md" placeholder="House number and street name" type="text">
+<input class="w-full h-12 px-4 bg-surface border border-outline-variant rounded focus:border-primary focus:ring-1 focus:ring-primary outline-none text-body-md" placeholder="Apartment, unit, etc." type="text">
+<input class="w-full h-12 px-4 bg-surface border border-outline-variant rounded focus:border-primary focus:ring-1 focus:ring-primary outline-none text-body-md" placeholder="Phone number" type="tel">
+</div>
+</section>
+<!-- Delivery Order Notes Section -->
+<section>
+<h2 class="text-headline-md font-headline-md text-on-surface mb-4">Delivery Order notes</h2>
+<textarea class="w-full p-4 bg-surface border border-outline-variant rounded focus:border-primary focus:ring-1 focus:ring-primary outline-none text-body-md resize-none" placeholder="Note about your order" rows="4"></textarea>
+</section>
+<!-- Payment Method Section -->
+<section>
+<h2 class="text-headline-md font-headline-md text-on-surface mb-6">Payment Method</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-unit-md mb-unit-lg">
+<label class="cursor-pointer">
+<input checked="" class="hidden peer" name="payment_method" type="radio" value="debit">
+<div class="flex items-center justify-center h-16 border border-outline-variant rounded bg-surface peer-checked:bg-primary-container peer-checked:text-on-primary-container peer-checked:border-primary transition-all">
+<span class="font-label-md text-label-md">Debit Card</span>
+</div>
+</label>
+<label class="cursor-pointer">
+<input class="hidden peer" name="payment_method" type="radio" value="transfer">
+<div class="flex items-center justify-center h-16 border border-outline-variant rounded bg-surface peer-checked:bg-primary-container peer-checked:text-on-primary-container peer-checked:border-primary transition-all">
+<span class="font-label-md text-label-md">Online Transfer</span>
+</div>
+</label>
+<label class="cursor-pointer">
+<input class="hidden peer" name="payment_method" type="radio" value="cash">
+<div class="flex items-center justify-center h-16 border border-outline-variant rounded bg-surface peer-checked:bg-primary-container peer-checked:text-on-primary-container peer-checked:border-primary transition-all">
+<span class="font-label-md text-label-md">Cash on Delivery</span>
+</div>
+</label>
+</div>
+<!-- Card Details Form (Conditional visual logic) -->
+<div class="space-y-unit-md p-unit-md bg-surface/50 rounded-lg" id="card-form">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-unit-md">
+<input class="w-full h-12 px-4 bg-surface border border-outline-variant rounded focus:border-primary outline-none text-body-md" placeholder="Card Number" type="text">
+<input class="w-full h-12 px-4 bg-surface border border-outline-variant rounded focus:border-primary outline-none text-body-md" placeholder="(MM/YY)" type="text">
+<input class="w-full h-12 px-4 bg-surface border border-outline-variant rounded focus:border-primary outline-none text-body-md" placeholder="Security Code" type="password">
+<input class="w-full h-12 px-4 bg-surface border border-outline-variant rounded focus:border-primary outline-none text-body-md" placeholder="Name on Card" type="text">
+</div>
+</div>
+</section>
+</form>
+<!-- Right Column: Order Summary -->
+<aside class="lg:col-span-4 sticky top-24">
+<div class="bg-secondary-container p-unit-lg rounded-lg custom-shadow">
+<h2 class="text-headline-md font-headline-md text-on-surface mb-unit-md">Your Order</h2>
+<div class="h-px bg-outline-variant/30 mb-unit-md"></div>
+<div class="space-y-4 mb-unit-lg">
+<div class="flex justify-between items-center text-on-surface-variant">
+<span class="text-body-md">Subtotal (2 item)</span>
+<span class="font-bold text-on-surface">$500.00</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant">
+<span class="text-body-md">Service Fee</span>
+<span class="font-bold text-on-surface">$10.00</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant">
+<span class="text-body-md">Taxes</span>
+<span class="font-bold text-on-surface">$00.00</span>
+</div>
+</div>
+<div class="h-px bg-outline-variant/30 mb-unit-md"></div>
+<div class="flex justify-between items-center mb-unit-lg">
+<span class="text-headline-sm font-headline-md text-on-surface">Total</span>
+<span class="text-headline-sm font-headline-md text-on-surface">$510.00</span>
+</div>
+<button class="w-full h-14 bg-primary-container text-on-primary text-label-md font-label-md rounded shadow-lg hover:shadow-xl hover:translate-y-[-2px] active:translate-y-[0px] transition-all flex items-center justify-center gap-2 group" type="submit">
+                        Checkout
+                        <span class="material-symbols-outlined text-[20px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<div class="mt-unit-lg">
+<div class="flex items-center gap-3 p-4 bg-surface/40 rounded border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary">security</span>
+<p class="text-label-sm text-on-surface-variant leading-tight">Your payment is encrypted and 100% secure.</p>
+</div>
+</div>
+</div>
+<div class="mt-8 rounded-lg overflow-hidden h-64 border border-outline-variant relative">
+<div class="w-full h-full bg-cover bg-center" data-alt="An editorial photography shot of a minimalist, sun-drenched Scandinavian living room with a premium linen sofa and natural wood furniture. The lighting is soft and ambient, creating a serene and high-end aesthetic. A neutral color palette of creams, browns, and soft greys dominates the scene, reflecting a calm and balanced atmosphere." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC2haqab7F-eISveb4Mn9HtT9kfeDSwDbi6yxokSd0JmUbDzktJuQx4-LZkLjErwthwPk0ciPexTCN22TJyRdaJySSQzTG99yzVXeMVAxOdXI_f6WgxXRm5z3mYu1Kq3osSa4OqP8wGNipKYLVrtevoFIw-waPuPuIM37Raw3d7Jf9aLRvCdD56U6MZ3RtjhI0cXTl8iGA5p7Jm2T5bDSRrQV5XHaI23Npvpu06w9EXZc6QxQ5fbOPHJw')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-6">
+<p class="text-white text-label-md font-medium italic">"Designed for comfort, crafted for life."</p>
+</div>
+</div>
+</aside>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-secondary-container mt-unit-xl">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-unit-lg px-margin-mobile md:px-margin-desktop py-unit-xl max-w-container-max mx-auto">
+<div class="space-y-unit-md">
+<h3 class="text-headline-md font-headline-md font-bold text-on-secondary-container">Tykea</h3>
+<p class="text-body-md font-body-md text-on-secondary-container max-w-xs">Relax in style with sofas &amp; sectionals. Keep things organized with smart storage solutions.</p>
+<div class="flex items-center gap-4 pt-2">
+<a class="p-2 border border-outline-variant rounded hover:bg-surface/20 transition-colors" href="#">
+<img alt="X Social" class="w-5 h-5 opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBelv2TH1ySvNJBjQP0kx4J5NRpwlgmnuLAPsN_k_1a5EShTQ3T6D9Ylg463jRiomaie0GcS8yZP6M1e2FtoUcamUdePBKouFP5jhdGh8P2sbcOtNbsPSAzJcbNJFeEhC7hKVqfxfIi1i3EkPzggq3mDeR4YKJF1h9rUn4moiy-iBlHG0BDiUEP9Oz2qeuSCihou8TrPKmY9ufuMqOcnBctsxAo8Kdvwqdu4FNhWo6vTOUTQqX0N6f49Q">
+</a>
+<a class="p-2 border border-outline-variant rounded hover:bg-surface/20 transition-colors" href="#">
+<img alt="Instagram" class="w-5 h-5 opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7j4sQsDBuU6Wxdf0vNSZfFzvbaxTWawpOXFyjunGKR7IN3v7Q303SQNGHupLwJpda9IJW-Aq_2Q6kABziyaMxHV6ciCmoItTt0nF1mh959a-o72KtJlGb9nsFqIJqXio8ZktdYga7aMgmtlWDjBtN9JmmCxJ3vn9JX52kWd3-mnavk9o10bfabx-ghmztXVWXB4PQG7THIH3KgU3naO8oA-NuAkCvm38og1A4R5h8IHjUmMC82CsDGQ">
+</a>
+<a class="p-2 border border-outline-variant rounded hover:bg-surface/20 transition-colors" href="#">
+<img alt="LinkedIn" class="w-5 h-5 opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkHtLhGw14PYtiraTSldQ4A3U7x4XA6TfWmV1mX02GAPVUSiLkPKoa737YVFhCm1YPAKJqYEaR-DFygtzyGfxo6hthm39xJZJjm9svQqyrvNtEy00In1ntWg53dt83-O0rNwnrpxtRoylFPvb8KOweGrGpAy6IfFEJIdJ_xEvG9bfrFjYGCKPDUrmh2kcBK2VerLxkYlF3H__C80M_pOo9As8dr3oBJvJQ9G1Rq5t1Jt9NIKTeLHFBHA">
+</a>
+</div>
+</div>
+<div class="space-y-unit-md">
+<h4 class="text-headline-sm font-headline-md text-on-secondary-container">Explore</h4>
+<ul class="space-y-2">
+<li class=""><a class="text-label-md font-label-md text-on-secondary-container hover:text-primary transition-colors duration-200" href="#">Living Room</a></li>
+<li class=""><a class="text-label-md font-label-md text-on-secondary-container hover:text-primary transition-colors duration-200" href="#">Bedroom</a></li>
+<li class=""><a class="text-label-md font-label-md text-on-secondary-container hover:text-primary transition-colors duration-200" href="#">Home Office</a></li>
+</ul>
+</div>
+<div class="space-y-unit-md">
+<h4 class="text-headline-sm font-headline-md text-on-secondary-container">Company</h4>
+<ul class="space-y-2">
+<li class=""><a class="text-label-md font-label-md text-on-secondary-container hover:text-primary transition-colors duration-200" href="#">Careers</a></li>
+<li class=""><a class="text-label-md font-label-md text-on-secondary-container hover:text-primary transition-colors duration-200" href="about.html">about us</a></li>
+<li class=""><a class="text-label-md font-label-md text-on-secondary-container hover:text-primary transition-colors duration-200" href="#">blogs</a></li>
+<li class=""><a class="text-label-md font-label-md text-on-secondary-container hover:text-primary transition-colors duration-200" href="#">contact</a></li>
+</ul>
+</div>
+<div class="space-y-unit-md">
+<h4 class="text-headline-sm font-headline-md text-on-secondary-container">Support</h4>
+<ul class="space-y-2">
+<li class=""><a class="text-label-md font-label-md text-on-secondary-container hover:text-primary transition-colors duration-200" href="#">Order Tracking</a></li>
+<li class=""><a class="text-label-md font-label-md text-on-secondary-container hover:text-primary transition-colors duration-200" href="#">Customer support</a></li>
+</ul>
+</div>
+</div>
+<div class="px-margin-mobile md:px-margin-desktop py-unit-md border-t border-outline-variant/10 text-center">
+<p class="text-label-sm font-label-md text-on-secondary-container/60">© 2024 Tykea Furniture. All rights reserved.</p>
+</div>
+</footer>
+<script>
+        // Simple interactivity for payment method switching
+        document.querySelectorAll('input[name="payment_method"]').forEach(radio => {
+            radio.addEventListener('change', (e) => {
+                const cardForm = document.getElementById('card-form');
+                if (e.target.value === 'debit') {
+                    cardForm.style.opacity = '1';
+                    cardForm.style.pointerEvents = 'auto';
+                } else {
+                    cardForm.style.opacity = '0.3';
+                    cardForm.style.pointerEvents = 'none';
+                }
+            });
+        });
+    </script>
+
+
+
+
+</body></html>
