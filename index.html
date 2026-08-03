@@ -1,482 +1,289 @@
-<!DOCTYPE html>
-
-<html class="scroll-smooth" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Tykea | Warm Minimalist Furniture</title>
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Tykea - Comfort That Fits Your Space</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@200..800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100..900&family=Manrope:wght@100..900&display=swap" rel="stylesheet"/>
-<!-- Tailwind Configuration -->
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                "surface-variant": "#e5e2e1",
-                "secondary-fixed": "#e8e1da",
-                "on-secondary-fixed": "#1e1b17",
-                "outline": "#83746b",
-                "on-secondary-container": "#66625c",
-                "inverse-on-surface": "#f3f0ef",
-                "on-background": "#1c1b1b",
-                "on-error-container": "#93000a",
-                "tertiary": "#755b00",
-                "error-container": "#ffdad6",
-                "on-secondary-fixed-variant": "#4a4641",
-                "primary-fixed": "#ffdcc5",
-                "primary": "#6f4627",
-                "on-tertiary-fixed-variant": "#594400",
-                "surface-container": "#f0eded",
-                "inverse-surface": "#313030",
-                "on-secondary": "#ffffff",
-                "surface-container-lowest": "#ffffff",
-                "on-surface": "#1c1b1b",
-                "primary-container": "#8b5e3c",
-                "secondary-fixed-dim": "#ccc6be",
-                "on-error": "#ffffff",
-                "secondary": "#625e58",
-                "on-tertiary": "#ffffff",
-                "surface-container-highest": "#e5e2e1",
-                "surface-container-high": "#eae7e7",
-                "primary-fixed-dim": "#f4bb92",
-                "inverse-primary": "#f4bb92",
-                "on-tertiary-container": "#503d00",
-                "error": "#ba1a1a",
-                "on-primary-fixed-variant": "#653d1e",
-                "surface-container-low": "#f6f3f2",
-                "background": "#fcf9f8",
-                "surface-tint": "#805533",
-                "secondary-container": "#e5dfd7",
-                "on-primary": "#ffffff",
-                "tertiary-fixed-dim": "#f2c025",
-                "on-tertiary-fixed": "#241a00",
-                "tertiary-fixed": "#ffdf92",
-                "surface-dim": "#dcd9d9",
-                "surface-bright": "#fcf9f8",
-                "on-primary-fixed": "#301400",
-                "tertiary-fixed": "#ffdf92",
-                "surface": "#fcf9f8",
-                "on-surface-variant": "#51443c",
-                "outline-variant": "#d5c3b8"
-            },
-            "borderRadius": {
-                "DEFAULT": "0.125rem",
-                "lg": "0.25rem",
-                "xl": "0.5rem",
-                "full": "0.75rem"
-            },
-            "spacing": {
-                "unit-xl": "64px",
-                "gutter": "24px",
-                "container-max": "1280px",
-                "unit-lg": "32px",
-                "margin-mobile": "20px",
-                "unit-md": "16px",
-                "unit-sm": "8px",
-                "unit-xs": "4px",
-                "margin-desktop": "64px"
-            },
-            "fontFamily": {
-                "body-lg": ["Manrope"],
-                "body-md": ["Manrope"],
-                "headline-lg": ["DM Sans"],
-                "label-sm": ["Manrope"],
-                "headline-lg-mobile": ["DM Sans"],
-                "label-md": ["Manrope"],
-                "headline-md": ["DM Sans"],
-                "display-lg": ["DM Sans"]
-            },
-            "fontSize": {
-                "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
-                "label-sm": ["12px", {"lineHeight": "1.4", "fontWeight": "500"}],
-                "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "600"}],
-                "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "600"}],
-                "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
-                "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
-            }
-          }
-        }
-      }
-    </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-            vertical-align: middle;
-        }
-        .occlusion-shadow {
-            box-shadow: 0px 10px 30px rgba(0,0,0,0.05);
-        }
-        .glass-nav {
-            backdrop-filter: blur(8px);
-            background-color: rgba(252, 249, 248, 0.85);
-        }
-        .hero-gradient {
-            background: linear-gradient(to right, rgba(252, 249, 248, 0.9) 30%, transparent 100%);
-        }
-    </style>
+<style data-purpose="custom-fonts">
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+<style data-purpose="custom-colors">
+    :root {
+      --brand-brown: #a66e44;
+      --brand-bg-light: #f4f1ea;
+      --brand-bg-muted: #e5e0d8;
+      --brand-text-dark: #2d2d2d;
+      --brand-accent-sale: #c29d8f;
+    }
+  </style>
 </head>
-<body class="bg-background text-on-surface font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
-<!-- TopNavBar -->
-<header class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-outline-variant">
-<nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
-<div class="flex items-center gap-unit-lg">
-<a class="text-headline-md font-headline-md font-bold text-on-surface" href="#">Tykea</a>
-<div class="hidden md:flex gap-unit-md">
-<a class="text-label-md font-label-md text-primary font-bold hover:text-primary transition-colors duration-200" href="#">Collection</a>
-<a class="text-label-md font-label-md text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="#">About</a>
-<a class="text-label-md font-label-md text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="#">Blog</a>
-<a class="text-label-md font-label-md text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="#">Returns & Refunds</a>
-</div>
-</div>
-<div class="flex items-center gap-unit-md">
-<div class="hidden lg:flex items-center bg-surface-container-low px-4 py-2 rounded-full border border-outline-variant">
-<span class="material-symbols-outlined text-on-surface-variant mr-2">search</span>
-<input class="bg-transparent border-none focus:ring-0 text-label-md p-0 w-32" placeholder="Search..." type="text"/>
-</div>
-<div class="flex gap-4">
-<button class="hover:text-primary transition-colors duration-200"><span class="material-symbols-outlined" data-icon="favorite">favorite</span></button>
-<button class="hover:text-primary transition-colors duration-200"><span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span></button>
-<button class="hover:text-primary transition-colors duration-200"><span class="material-symbols-outlined" data-icon="person">person</span></button>
-<a class="hidden md:block text-label-md font-label-md text-on-surface-variant font-medium hover:text-primary" href="#">Login</a>
-</div>
+<body class="bg-white text-[--brand-text-dark]">
+<!-- BEGIN: Navigation -->
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100">
+<nav class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+<div class="flex items-center gap-2"><a class="flex items-center gap-2" href="index.html"><div class="w-8 h-8 bg-gray-300 rounded"></div><span class="font-bold text-xl tracking-tight">Tykea</span></a></div>
+<ul class="hidden md:flex items-center gap-8 text-sm font-medium">
+<li class=""><a class="hover:text-[--brand-brown]" href="collection.html">Collection</a></li>
+<li class=""><a class="hover:text-[--brand-brown]" href="about.html">About</a></li>
+<li class=""><a class="hover:text-[--brand-brown]" href="#">Blog</a></li>
+<li class=""><a class="hover:text-[--brand-brown]" href="return.html">Returns &amp; Refunds</a></li>
+</ul>
+<div class="flex items-center gap-4">
+<button class="p-2 hover:bg-gray-100 rounded-full">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<button class="p-2 hover:bg-gray-100 rounded-full">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<a class="p-2 hover:bg-gray-100 rounded-full" href="cart.html"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></a>
+<a class="text-sm font-medium pl-2" href="#">Login</a>
 </div>
 </nav>
 </header>
-<main class="pt-20">
-<!-- Hero Section -->
-<section class="relative min-h-[80vh] flex items-center overflow-hidden">
-<div class="absolute inset-0 z-0">
-<img class="w-full h-full object-cover" data-alt="A serene, high-key photograph of a minimalist bedroom featuring a light-toned wooden bed frame with crisp white linens. Soft, natural morning light streams through a window, casting gentle shadows. The room is decorated with a single branch in a ceramic vase, embodying a warm minimalist aesthetic with a soft palette of whites, creams, and light oak wood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA76sTmM-YwFFE1IoTbr3bOA-ATxA7DDZxO8GU-TzYAFWts8bkDEnb8exFmO3Dz96F9djtOts8nGOur1WJ4GNswstImifqnNjYqu8Iar1u8RTyOx5cYAaST3purIbjj9RlSRL0CPo8lHstrrR88Vyw8LyTuccgLIZYoThYJEaTSXtPC1B6NRddHrT3N_6vIIp2z3jtJxcbhNh83DNvdTUXwPM8a4v63jNvrEg62YwH0QuK58_-yG_ke5A"/>
-<div class="absolute inset-0 hero-gradient"></div>
+<!-- END: Navigation -->
+<main>
+<!-- BEGIN: HeroSection -->
+<section class="relative bg-[--brand-bg-light] overflow-hidden" data-purpose="hero-banner">
+<div class="max-w-7xl mx-auto px-4 py-12 md:py-24 flex flex-col md:flex-row items-center relative min-h-[600px]">
+<div class="md:w-1/2 z-10">
+<h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">
+            Comfort That<br>Fits Your Space
+          </h1>
+<p class="text-gray-600 text-lg mb-2 font-medium">Thoughtfully designed furniture for everyday comfort and modern living</p>
+<p class="text-gray-500 mb-8 max-w-sm">Beds, chairs, and tables made to fit your lifestyle</p>
+<a class="inline-block bg-[--brand-brown] text-white px-8 py-3 rounded-full font-medium hover:bg-[#8e5a36] transition-colors" href="collection.html">
+            Explore Collection
+          </a>
 </div>
-<div class="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
-<div class="max-w-xl">
-<h1 class="text-display-lg font-display-lg text-on-surface mb-unit-md">Comfort That Fits Your Space</h1>
-<p class="text-body-lg font-body-lg text-on-surface-variant mb-unit-lg max-w-md">Thoughtfully designed furniture for everyday comfort and modern living. Beds, chairs, and tables made to fit your lifestyle.</p>
-<a class="inline-block bg-primary-container text-on-primary font-label-md px-unit-lg py-4 rounded transition-transform hover:scale-[1.02] active:scale-[0.98]" href="#">Explore Collection</a>
+<div class="mt-12 md:mt-0 md:w-1/2 relative">
+<!-- Main Hero Image -->
+<div class="relative rounded-lg overflow-hidden shadow-xl">
+<img alt="Featured Furniture" class="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCx3tv9uUnyLXb1GUoSnKRkLESrKm42Cf7Jzmp9Z34cA73BoEhdaZtn0OOswSYv-nFbGcehDOWm9mRAPdLBrR6hiquQCGb7HuJpWqpoKsH4IlhCWk3n2hDftwoyXRYB7ZSgMGWLWqz2vg7acaFs8BbeslstKrmvLd4UhUgrvGTi5AVIH0jkdygfKreLxkp26LEkzLqS7IbLEGDJh7d304R6SgPcwUlCPeOi0Y9CkN4BVh_kKdyoHua3nw">
 </div>
+<!-- Floating side images from reference -->
+<div class="absolute -top-10 -right-4 w-48 hidden lg:block">
+<img alt="Furniture detail" class="rounded-lg shadow-lg border-4 border-white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA39gSUbizcG7eIc4rOrCLcewzI4_pICaQ3SaFG-fYfTKvrECpdFhpVoyUn96qxkJEtLverEIwWmV8QXJxfCFD5Xd6eWFzcZ9WcBP5wC6S5ruL_dtijLW5ehdgBDOcWButKE6rF3b1eyI5MI1eVSCe2YJ264Lr6-FLZJVAbWK7PWTM0QRLBbIdvkimy6diTJ9-oRtKGuoy6T1pyDv3xNeKyCCkGp5ufGXJ2rpZ26It3maMGaXA_WaozHg">
 </div>
-<!-- Secondary floating images - Asymmetric Layout -->
-<div class="hidden lg:flex flex-col gap-unit-md absolute right-margin-desktop top-1/2 -translate-y-1/2 z-10 w-72">
-<div class="occlusion-shadow rounded-xl overflow-hidden bg-white p-2 transform rotate-2">
-<img class="w-full aspect-square object-cover rounded-lg" data-alt="Close-up of a minimalist wooden bedside table with a sleek drawer and an open cubby, finished in a warm walnut tone. A single dark ceramic cup rests on the surface against a soft, muted beige wall background. The lighting is diffused and atmospheric." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVlc-uWiQ_ApYABoqz2KgsP5Y6IFuWSGipH-681DYrsS0_H-XOCzhJMpU8z0V69y3ts-bs5eKOfGR6xOPad-A93vlpgk9pmlfAvJWfvaJlo2mVZy02jkiZK01ly5CWr4L6yqWxIHQMjQBTdGigr27L-ResnrYxZJCX9pEnWFSG0tVUFngQ8ybKH7xtS3XF7puSUCZ3ZlFvnxxXeZrSa9bzCCOoZr8yPTLHEidzRFjuAzYgHa0FugUhhw"/>
-</div>
-<div class="occlusion-shadow rounded-xl overflow-hidden bg-white p-2 transform -rotate-3 translate-x-[-20px]">
-<img class="w-full aspect-square object-cover rounded-lg" data-alt="A stylish Nordic lounge chair with a light cream cushioned seat and backrest, featuring a dark wood frame and woven cane side panels. The chair is positioned against a neutral, minimal background, emphasizing its architectural clarity and tactile quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxXwLXwZNt1a8Mx0xr7fVXOCJhocNJfcEvFF_1E656DI0jdqSCKOu59PguvAMyRc9wwRNcEGn3axuUEpUsNc1rvO77-8lwV7lWpI9qhB1bQuR0Lv0tuBVhTG2Yllbpw3Jgang_a8TKv9X4raT1zVEOWBsB7tSyw3KwuqOhM14wtiu5-eORAqJTNgLh9QQKa8BxR9iEXylEor2t5f5JHL3V3w6K1xBgxY8YG2rWkq5Q6PfAY-g4KroHPw"/>
-</div>
-</div>
-</section>
-<!-- Category Selector -->
-<section class="py-unit-xl px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center">
-<h2 class="text-headline-md font-headline-md mb-unit-lg">Choose our category</h2>
-<div class="flex flex-wrap justify-center gap-unit-lg">
-<!-- Chair -->
-<button class="group flex flex-col items-center gap-unit-sm">
-<div class="w-24 h-24 rounded-full overflow-hidden bg-secondary-container p-1 border-2 border-transparent group-hover:border-primary transition-all duration-300">
-<img class="w-full h-full object-cover rounded-full" data-alt="Minimalist iconographic photo of a modern wooden chair on a circular cream background. The style is clean and gallery-like." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQFFz2V-eigJ--wdquouE0BKJ6BwcOa28DxvVcVezRE8tB8rQunhmmFM-DPXCXsTkKteDFFQXDLqfnHn_TEP4w_W4O5UtU0GQCp0GcjUZyUq2LBnw8JC2RVJK48iKPEa0IAb9Gu5LNYlmVP_6A6O3eJjClzqxP3A0TlVX4LAXE9QdXoaR8y4tQLcdndC5ArN-uJaAV-g0zhkPEQxkIkjoXtXE7-5bTt864-c9bVhoqrTI6Gjj8BDtdgg"/>
-</div>
-<span class="text-label-md font-label-md">Chair</span>
-</button>
-<!-- Bed -->
-<button class="group flex flex-col items-center gap-unit-sm">
-<div class="w-24 h-24 rounded-full overflow-hidden bg-secondary-container p-1 border-2 border-transparent group-hover:border-primary transition-all duration-300">
-<img class="w-full h-full object-cover rounded-full" data-alt="Minimalist iconographic photo of a modern bed frame on a circular cream background. Clean lines and soft shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBr-wK09EW0fJFJcLxp4L00Se1e9WRxaSZQ7_Sp9PeTsqMMqZnF2EquOBHqzdRTA4_kVvzKi831AqNiaMvD0FvCWgz4yEkm8Rum_fgrex7P7xdqLa_tFF9PdmYtb6InLOIoMV2hYMFSDFKjMNFX-eScy00yDVl75-b1hK4qqTygx0b9yfFmNwmdPUWP19zkYzBxFt49LK6bh_a5k2LEDl0FwzbhJqlRpkFr20Aqc-C1kbyMaYKvgRJyPA"/>
-</div>
-<span class="text-label-md font-label-md">Bed</span>
-</button>
-<!-- Table -->
-<button class="group flex flex-col items-center gap-unit-sm">
-<div class="w-24 h-24 rounded-full overflow-hidden bg-secondary-container p-1 border-2 border-transparent group-hover:border-primary transition-all duration-300">
-<img class="w-full h-full object-cover rounded-full" data-alt="Minimalist iconographic photo of a sleek dining table on a circular cream background. Focus on wood grain and joinery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnyrHtmgg7SOmukysCBiUUe_fpkkohHKVUGW61ijyLPTwFAv9Xvtqg_b0GO5aMdNaZ3c2msqpMHWJ7LHrkUPXBDwjuyXUHylkKQ7v7IJQFV423PDTtSjHuw7oUjHhoaDtDLwIy9f5H3L8wpu5lpTiBf4_Xnz6tKFFO2KU1gHNt5aH50mVmXRQyHrhtzgb5mHWkIdNP2Dx-WViR-qsRLW1ziCMJZhrxKEKX4rJq4H6GDR9MzxKG0xDqiw"/>
-</div>
-<span class="text-label-md font-label-md">Table</span>
-</button>
-<!-- Sofa -->
-<button class="group flex flex-col items-center gap-unit-sm">
-<div class="w-24 h-24 rounded-full overflow-hidden bg-secondary-container p-1 border-2 border-transparent group-hover:border-primary transition-all duration-300">
-<img class="w-full h-full object-cover rounded-full" data-alt="Minimalist iconographic photo of a soft fabric sofa on a circular cream background. Neutral tones and cozy texture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBU2CsKYhavFodtbAHCFwRGes5GkC_G6FG7nXd1pCm8kYqftpb0yYG0uvgagJLoTrbVTQors9nmASz5UfFXB3_BBq4GpAyiBTQmFtHYwvMW_neZzLDIqrEXQnapkIAfYbMe0gzM-xZ-nOjMPqyE2odx2b6gN9q-1ebJAjRVuW6iyl12v9HYWTj1I_vUht9Kncgdn6ZgcOfq0utO0j9n3CGszFHrE_oaZXjwgM3uXOILxNG8e0ZNS8HrUg"/>
-</div>
-<span class="text-label-md font-label-md">Sofa</span>
-</button>
-<!-- Storage -->
-<button class="group flex flex-col items-center gap-unit-sm">
-<div class="w-24 h-24 rounded-full overflow-hidden bg-secondary-container p-1 border-2 border-transparent group-hover:border-primary transition-all duration-300">
-<img class="w-full h-full object-cover rounded-full" data-alt="Minimalist iconographic photo of a wooden sideboard on a circular cream background. Elegant storage solution." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDA_yk8oh5xg6YRmDwYigaST52KqTgGfL1PZzrRA4-58rEdp4S56v9iNJLSIU0NNL-TdUhdDGSU3V3QvSURvctxUdRhiB2ifE4m-34XNBBWVCb7pgJ94bK71R6kbn6C_7zjF3C4VLmHu-zr7Xl8cZT8KheC_P3sMqZ-FELUEl3Q7XmGqbHDNWVbb7qlpv3KlHB2qF0Si43z3vUoC9hcTQaR1ESd2t0Ak5OLm12Qjx8c8Y1KjImic8q90w"/>
-</div>
-<span class="text-label-md font-label-md">Storage</span>
-</button>
-</div>
-</section>
-<!-- Top Products -->
-<section class="py-unit-xl bg-surface-container-low">
-<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-<div class="text-center mb-unit-lg">
-<h2 class="text-headline-lg font-headline-lg mb-unit-sm">Top Products</h2>
-<div class="flex justify-center gap-unit-md">
-<button class="text-label-md font-label-md text-primary border-b-2 border-primary pb-1">New Arrival</button>
-<button class="text-label-md font-label-md text-on-surface-variant hover:text-primary transition-colors pb-1">Best Selling</button>
-<button class="text-label-md font-label-md text-on-surface-variant hover:text-primary transition-colors pb-1">Future Product</button>
-</div>
-</div>
-<div class="grid grid-cols-2 lg:grid-cols-4 gap-unit-md md:gap-gutter">
-<!-- Product Card 1 -->
-<div class="flex flex-col group">
-<div class="aspect-[4/5] bg-white rounded-lg overflow-hidden relative mb-4">
-<span class="absolute top-2 left-2 bg-tertiary-container text-on-tertiary-container text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">New</span>
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A premium Nordic lounge chair with ivory cushions and a dark mahogany frame, positioned against a minimalist grey background. The lighting highlights the fine texture of the cane side panels and the smooth wood finish." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYLPmDZ94OGO9BUJMOKTkgyp_pEndFEP27FuWmbf3Z7UwXCQrXswJ-0hAU7RNHT1zCmheBJbvOhLVX9WcLBEacbvfkUHlGXxV1F5dxwbj4kW_FfdP2g-n4acgGGWlRAX0-labumWjW_N2o4BjJwG2ExUmbi9FDY0n46PAMuZ7nAozBaNyXD7bhNsYL2RjVUzmxAPy2vQA4J6UMGq3MaKySE0qewYeTg21L_0MGjH90Y1OSMbA8fLYBLA"/>
-<button class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover:opacity-100 transition-all shadow-sm">
-<span class="material-symbols-outlined text-primary" data-icon="shopping_cart">shopping_cart</span>
-</button>
-</div>
-<h3 class="text-label-md font-label-md mb-1">Nordic Lounge Chair</h3>
-<p class="text-on-surface-variant text-label-md font-medium">$ 330</p>
-</div>
-<!-- Product Card 2 -->
-<div class="flex flex-col group">
-<div class="aspect-[4/5] bg-white rounded-lg overflow-hidden relative mb-4">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern minimalist chair with light fabric and wooden legs, captured in high-key studio lighting for a clean, editorial look. Warm wooden tones and neutral upholstery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1gj2qdXVG7xsU2olX3rPmfskgnXLUHoQJECyNuZhBjbK0HDp0Ercl_8IJQQbkYpS0JJSmxiAQfjJ1JMQh3WBhTLlFiw_0fAMW1i-BUnJEGuhlwLJPKfvsWIVthTh79QQ-Rx84pqBQCmgFXEdaDG8MmfKyGLVEqOPXvL_RmZ2bXcBLyoxlJnjfdArBSl3JF1aghaPPQckr0WJLckGL-ywykyP_IMTJzMt8KmFTxNmf-NJY6pa8AjW1HA"/>
-<button class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover:opacity-100 transition-all shadow-sm">
-<span class="material-symbols-outlined text-primary" data-icon="shopping_cart">shopping_cart</span>
-</button>
-</div>
-<h3 class="text-label-md font-label-md mb-1">Nordic Lounge Chair</h3>
-<p class="text-on-surface-variant text-label-md font-medium">$ 330</p>
-</div>
-<!-- Product Card 3 -->
-<div class="flex flex-col group">
-<div class="aspect-[4/5] bg-white rounded-lg overflow-hidden relative mb-4">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Architectural furniture design, a chair featuring elegant curved wood and cream colored upholstery. The lighting is soft and ambient, creating a serene mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEml0JoLT5UtyGNr8RyJWCs9PDHFqvWKJaNQT5NeWJ3UvhmmXLZZKH9SIWFNflyBHuNhEbYN2Ztq6gBRC4qwSug_ahuznrjiRLwdVBAZm_78J1xjWrXRz5is-CMGyUtDMdwpKn0-jhJ_RFlHR37wuOn4w0MlSbIS6e-HNH3RhwURojvIFYe3dcSTtEmWkBKf2peb8G0ugyBLVNB1qiuSYBMjHfBDzUNJmF4R_Xyof0hpDo1iS81l7mtA"/>
-<button class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover:opacity-100 transition-all shadow-sm">
-<span class="material-symbols-outlined text-primary" data-icon="shopping_cart">shopping_cart</span>
-</button>
-</div>
-<h3 class="text-label-md font-label-md mb-1">Nordic Lounge Chair</h3>
-<p class="text-on-surface-variant text-label-md font-medium">$ 330</p>
-</div>
-<!-- Product Card 4 -->
-<div class="flex flex-col group">
-<div class="aspect-[4/5] bg-white rounded-lg overflow-hidden relative mb-4">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Luxury home furniture, a minimalist wooden armchair with woven cane details. The setting is clean and spacious, echoing a high-end interior design catalog." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-VneEK54uI6pTO5Lg8Sq4CkBmfQg7-BIy2eTFnYmZKObfArswa2ZOmyZ8fDzIwIgAVlFDqRYe46kXsmdhlIwnkbQyqr1j52lD9osf65DU0RahMdaC90Pr_0-bnQ5nz1CFhkp3VkwQ-1SE9vlN4h8M_NPAaHu8v8elQwBtFUxjGSgw4-J5qXQE_lX1HeVPYTKZJTzeQ4GAkM8OP1Ay2tUNofx-FwqtdoBnP30xYi_-p8zyMeGFBKlDUg"/>
-<button class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover:opacity-100 transition-all shadow-sm">
-<span class="material-symbols-outlined text-primary" data-icon="shopping_cart">shopping_cart</span>
-</button>
-</div>
-<h3 class="text-label-md font-label-md mb-1">Nordic Lounge Chair</h3>
-<p class="text-on-surface-variant text-label-md font-medium">$ 330</p>
+<div class="absolute -bottom-10 right-20 w-56 hidden lg:block">
+<img alt="Furniture detail" class="rounded-lg shadow-lg border-4 border-white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrv0JTIpkzvtJwx3OYk1IcbA9ys0DfLPELg0ahC2s-F2S11LxfJVZsxyu06sdphi0GRXXKtC7_YJADFJylMm0GI5yE0PHQWHCnJ2pc_cfBv8ALsBpYZy6_EQ8nqXiSiAwVKc3Nz3H9TYmmTzPC9bmUmLvmNYEfZRr8ZuYUkAW16agvj42e85zTDUAhAIhl8Phu4HK720e79AiBm5mH_uJk1buYC08L_d27yGJs7Tky4HOuDzFhmr_l3w">
 </div>
 </div>
 </div>
 </section>
-<!-- Mid-Season Sale Banner -->
-<section class="py-unit-xl px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-<div class="bg-secondary-container rounded-xl overflow-hidden p-unit-lg md:p-unit-xl flex flex-col md:flex-row items-center gap-unit-xl">
-<div class="flex-1 space-y-unit-md text-center md:text-left">
-<span class="text-tertiary font-label-md tracking-widest uppercase">Limited time offer</span>
-<h2 class="text-display-lg font-display-lg text-on-secondary-container">Mid-Season Sale — Up to 50% Off</h2>
-<p class="text-body-lg text-on-secondary-container opacity-80">Limited time on selected furniture. Transform your home with our premium pieces at unbeatable prices.</p>
-<div class="pt-unit-md">
-<button class="bg-primary text-on-primary font-label-md px-10 py-4 rounded hover:bg-primary/90 transition-all">Shop the Sale</button>
-</div>
-</div>
-<div class="flex-1 grid grid-cols-4 gap-4 w-full">
-<div class="col-span-4 lg:col-span-2 row-span-2 rounded-lg overflow-hidden occlusion-shadow">
-<img class="w-full h-full object-cover" data-alt="A focused shot of a high-end designer chair in a minimalist living room setting. The palette is muted browns and creams, emphasizing a calm and sophisticated atmosphere. High-quality materials and craftsmanship are visible in every detail." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOSfvcXdkbgJOPwsQVZEtHpanFFX8gsU4xqc0wkxjvkJtv6lIi6p3GHjef_mN36bxI90Bg7Aq6DQQZl7SOpeiX9UiebH1Sx-3GpDhXABN9jKPn7NFtlOt5XQU-7FwgBf55kfUhuZF5ik7sFWCcBtNtvRNImgnyPHiGkvRaFmPZ61rHFyvdY5fZ8jmLBZ_z-gIKqaaPf2Q80fXYKG_D35WtsFali9lmQUpLQJil7QvTckBJnhpsD2JmNA"/>
-</div>
-<div class="bg-white/50 aspect-square rounded-lg"></div>
-<div class="bg-white/50 aspect-square rounded-lg"></div>
-<div class="bg-white/50 aspect-square rounded-lg"></div>
-<div class="bg-white/50 aspect-square rounded-lg"></div>
+<!-- END: HeroSection -->
+<!-- BEGIN: CategorySelection -->
+<section class="py-16 bg-white" data-purpose="category-grid">
+<div class="max-w-7xl mx-auto px-4">
+<h2 class="text-center text-3xl font-bold mb-10">Choose our category</h2>
+<div class="flex flex-wrap justify-center gap-8 md:gap-12">
+<!-- Category Item -->
+<div class="flex flex-col items-center"><a href="collection.html" class="flex flex-col items-center"><div class="w-24 h-24 rounded-full overflow-hidden bg-gray-100 mb-3 border-2 border-transparent hover:border-[--brand-brown] transition-all cursor-pointer"><img alt="Chair" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8Gpji9AM77F4KPhyfRBqpnNcF0tYznytz2CerlgEFylaWsyZpMX6dto7nGj7Mw-MYcMLEoIXV6WQv1q0oIcFqYdOUm9XIUCK_M2C-e_wpEMX-JSNfklLGnP1PlBImtNuVgGsxfuADnHGg-9F1IJvsLdXqyDFbfY0s_sgLHi2vUiJzW27_yx7ucDMLzf-NvRnTen1tgY1gb-b2Y6IYi1ml33Pjn5-_2BvOrPEBzaVDbCo3GNZHVVkaTw"></div><span class="text-sm font-medium">Chair</span></a></div>
+<div class="flex flex-col items-center"><a href="collection.html" class="flex flex-col items-center"><div class="w-24 h-24 rounded-full overflow-hidden bg-gray-100 mb-3 border-2 border-transparent hover:border-[--brand-brown] transition-all cursor-pointer"><img alt="Bed" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYUKpYP0YVRxBCFwQIV5H2bUSBYCDXmR5I1c7VjPw7vtTfxXHjpVi6r7uuMWvdEHCAjcsoO9g_z_CYstzvxM7aqWf4qGBK5FHtf_wdjZ93sT7saA4vbvie_1d34r7LUBgTAbg71-KAxhRrh1_V9V5BC9RFLWpHLn06YLO64FU1wkiWMOGKME36jsOu59zl3zqzuAQMWDPcSylv3zI3EF08KRHM6om4cug_Wr3tvzy7BvHKs1ziJqwMzA"></div><span class="text-sm font-medium">Bed</span></a></div>
+<div class="flex flex-col items-center"><a href="collection.html" class="flex flex-col items-center"><div class="w-24 h-24 rounded-full overflow-hidden bg-gray-100 mb-3 border-2 border-transparent hover:border-[--brand-brown] transition-all cursor-pointer"><img alt="Table" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCePOWqZ6_P-gMaJsUmVgPyiyJlpTeWd9SeE0hSioqMW6_Cq4tb1QHzv1z7i6LvRD-wBTV07200gjtZ8FE7gTUImkvgycgI6X9DyiicwtZrxoBFM7zCWg1BfXAg614QP7Oeqrle89Ye-i3wYrYwUslnQHqzTg3E6uYU5cb2DoEJnySjQ-QxMVrwU3uOGqRrAtx8rmzp8nJXHvMeKwqkzm2AmFWPMX8T-9O37wjzMsVRafWVgQo2HcrN0g"></div><span class="text-sm font-medium">Table</span></a></div>
+<div class="flex flex-col items-center"><a href="collection.html" class="flex flex-col items-center"><div class="w-24 h-24 rounded-full overflow-hidden bg-gray-100 mb-3 border-2 border-transparent hover:border-[--brand-brown] transition-all cursor-pointer"><img alt="Sofa" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIYzkJQR9JrQY8PsKciSNHCgCWKY_sH4dZQlIVkYdIL_I1ur8_DOwjDsV2Sgm4IPPaYwV3pqq_l3sztn-_fbORj8Ul7SZPh_8oG9DKuDYpzFE0lfVszdxqjr5Gdwl-TLXciKGOR4_tmE6Hbcw4Eiu-TtqWEgd8-sV2YSRIerhJ6VhKQ6fmpglroLgeM9hsS_DkxtJhW2V4XbRPeAJWLsnxaT1JNgAZWri-fLFH9aWsB5Epn6jgEyn5JA"></div><span class="text-sm font-medium">Sofa</span></a></div>
+<div class="flex flex-col items-center"><a href="collection.html" class="flex flex-col items-center"><div class="w-24 h-24 rounded-full overflow-hidden bg-gray-100 mb-3 border-2 border-transparent hover:border-[--brand-brown] transition-all cursor-pointer"><img alt="Storage" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBks7TacKEdG1IIyYfFxKsQAqR-R-G_CJL3cshClk_N6IDAi3SXvDUAOFpP_bHJ0sMeo2PtxRbqjYTjYdmC144ENnXqngiFdP6Y7r2c2n22t4IZ6A45jwSUPmo63Kw4-DQ-Nx9V9k4eLQG74ofHJSu0Ubs5amsq78w5kqSeC9cSs4IxKHQMv_FpkwHdZj2mr8jWRU7Kg6701MaOHHfakIbKSUUCWGH74zPYm_JEu9UBUDlyi92Bzt_pYw"></div><span class="text-sm font-medium">Storage</span></a></div>
 </div>
 </div>
 </section>
-<!-- Design Stories & Trips -->
-<section class="py-unit-xl bg-surface-container-low">
-<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center mb-unit-lg">
-<h2 class="text-headline-lg font-headline-lg mb-unit-xs">Design Stories & Trips</h2>
-<p class="text-body-md text-on-surface-variant">Simple idea for modern living</p>
+<!-- END: CategorySelection -->
+<!-- BEGIN: TopProducts -->
+<section class="py-16 bg-white" data-purpose="product-tabs">
+<div class="max-w-7xl mx-auto px-4">
+<h2 class="text-center text-3xl font-bold mb-8">Top Products</h2>
+<!-- Tab Headers -->
+<div class="flex justify-center gap-8 mb-12 border-b border-gray-100 pb-4">
+<button class="text-lg font-bold border-b-2 border-black pb-4 -mb-[18px]">New Arrival</button>
+<button class="text-lg font-medium text-gray-400 hover:text-black pb-4">Best Selling</button>
+<button class="text-lg font-medium text-gray-400 hover:text-black pb-4">Future Product</button>
 </div>
-<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-3 gap-gutter">
-<!-- Story 1 -->
-<article class="bg-white rounded-lg overflow-hidden group occlusion-shadow flex flex-col h-full">
-<div class="relative overflow-hidden aspect-[16/10]">
-<span class="absolute top-4 left-4 bg-white/80 backdrop-blur-sm text-[10px] font-bold px-3 py-1 rounded-full uppercase z-10">Tips</span>
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Lifestyle photography of a modern bed with soft linen covers in a brightly lit room. A small wooden tray with a book and coffee sits on the edge, suggesting a cozy, lived-in feel. Warm minimalist style with natural textures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbSJvrDYznJEukd4lOOtoGPnWykIKXNIjMHe2CACi8GVXpzeRbhvAflxkUGZZ0FzqS_AWAA9TbEoKXdaAjyTS2jgE42mWqh6l1NxU-jN8sZJrmlLgiIHHqu5UdaRZ3InOMXfo8i8UI_lD5oc6Ul6151ycvOo5NLa7ALsymSlDc32YLvsQl0XHHSzftaLNPiZvc3NAEe_pNmEPLeQpf0b1N0il0vzH5F6Kaa2e55yAuaQm3eocKizh_lg"/>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Product Card -->
+<a class="group cursor-pointer" href="product.html"><div class="aspect-square bg-gray-50 rounded-lg overflow-hidden mb-4"><img alt="Nordic Lounge Chair" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDipbU3TVNNZMuvhHRMg6pcPGqC9rFARysnJPaNoOLvlO2071FR0vkloWHIMvpa_75drtolaipa8J4b20QM4wC-qAZ2kOsvfj0K8PWUIEfspsCZLhjp-zPe70VxeXXM2whdE8TZDSiOs1UHCt7gjsAbCh-0DTHgIdd4TK2klaoUgqf0RO3Lr7pvqdqzuZksxzmKx-ZOvflIy5NXFRVZf3DyzLMld6cEOPb5e_HOAocf5PwJMes3a9iRfQ"></div><h3 class="text-center font-semibold text-lg">Nordic Lounge Chair</h3><p class="text-center text-gray-500 mt-1">$ 330</p></a>
+<!-- Repeat Product Card -->
+<a class="group cursor-pointer" href="product.html"><div class="aspect-square bg-gray-50 rounded-lg overflow-hidden mb-4"><img alt="Nordic Lounge Chair" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDipbU3TVNNZMuvhHRMg6pcPGqC9rFARysnJPaNoOLvlO2071FR0vkloWHIMvpa_75drtolaipa8J4b20QM4wC-qAZ2kOsvfj0K8PWUIEfspsCZLhjp-zPe70VxeXXM2whdE8TZDSiOs1UHCt7gjsAbCh-0DTHgIdd4TK2klaoUgqf0RO3Lr7pvqdqzuZksxzmKx-ZOvflIy5NXFRVZf3DyzLMld6cEOPb5e_HOAocf5PwJMes3a9iRfQ"></div><h3 class="text-center font-semibold text-lg">Nordic Lounge Chair</h3><p class="text-center text-gray-500 mt-1">$ 330</p></a>
+<a class="group cursor-pointer" href="product.html"><div class="aspect-square bg-gray-50 rounded-lg overflow-hidden mb-4"><img alt="Nordic Lounge Chair" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDipbU3TVNNZMuvhHRMg6pcPGqC9rFARysnJPaNoOLvlO2071FR0vkloWHIMvpa_75drtolaipa8J4b20QM4wC-qAZ2kOsvfj0K8PWUIEfspsCZLhjp-zPe70VxeXXM2whdE8TZDSiOs1UHCt7gjsAbCh-0DTHgIdd4TK2klaoUgqf0RO3Lr7pvqdqzuZksxzmKx-ZOvflIy5NXFRVZf3DyzLMld6cEOPb5e_HOAocf5PwJMes3a9iRfQ"></div><h3 class="text-center font-semibold text-lg">Nordic Lounge Chair</h3><p class="text-center text-gray-500 mt-1">$ 330</p></a>
+<a class="group cursor-pointer" href="product.html"><div class="aspect-square bg-gray-50 rounded-lg overflow-hidden mb-4"><img alt="Nordic Lounge Chair" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDipbU3TVNNZMuvhHRMg6pcPGqC9rFARysnJPaNoOLvlO2071FR0vkloWHIMvpa_75drtolaipa8J4b20QM4wC-qAZ2kOsvfj0K8PWUIEfspsCZLhjp-zPe70VxeXXM2whdE8TZDSiOs1UHCt7gjsAbCh-0DTHgIdd4TK2klaoUgqf0RO3Lr7pvqdqzuZksxzmKx-ZOvflIy5NXFRVZf3DyzLMld6cEOPb5e_HOAocf5PwJMes3a9iRfQ"></div><h3 class="text-center font-semibold text-lg">Nordic Lounge Chair</h3><p class="text-center text-gray-500 mt-1">$ 330</p></a>
 </div>
-<div class="p-unit-md flex flex-col flex-grow">
-<h3 class="text-headline-md font-headline-md mb-2">How to style a Nordic Chair</h3>
-<p class="text-on-surface-variant text-body-md mb-4 line-clamp-2">Tips and inspiration for making your Nordic chair the centerpiece of your living room.</p>
-<a class="mt-auto text-primary font-bold text-label-md flex items-center group/link" href="#">
-                            Read More
-                            <span class="material-symbols-outlined ml-1 group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
-</a>
+</div>
+</section>
+<!-- END: TopProducts -->
+<!-- BEGIN: SaleSection -->
+<section class="py-16 bg-white" data-purpose="seasonal-sale">
+<div class="max-w-7xl mx-auto px-4">
+<div class="mb-10">
+<h2 class="text-3xl font-bold">Mid-Season Sale — Up to 50% Off</h2>
+<p class="text-gray-500 text-xl mt-2">Limited time on selected furniture</p>
+</div>
+<div class="bg-[--brand-accent-sale] rounded-xl p-6 md:p-10 flex flex-col lg:flex-row gap-8">
+<!-- Featured Sale Item -->
+<div class="lg:w-1/3 bg-white/20 backdrop-blur rounded-lg p-6">
+<img alt="Featured Sale Product" class="w-full rounded-lg shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApgLBOZ1BxLfGN8v54PJM-sEr9b0LoU2xJ_DXM6qnkzB603oMuGzTqJ55ojfxIXItZznWkZrOHWAE_rLbwxgMSgdrXGywQfYPRzo8gLt9Mk8-k1jmA04LUlK4CgWNsIi66FwXHN79fJq4-QPDV63R7JdFe29XU-XQuLJkiCqLU2dV98ZRD2vslv7ln4R7AmYK2GNodeDYyiDmexB3vZbcVVVXXMZdoqXSqxi8h-h0cqEzXsasktnxK0Q">
+</div>
+<!-- Grid of other sale items -->
+<div class="lg:w-2/3 grid grid-cols-2 md:grid-cols-4 gap-4">
+<!-- Placeholders for other products -->
+<div class="aspect-square bg-white/30 rounded-lg"></div>
+<div class="aspect-square bg-white/30 rounded-lg"></div>
+<div class="aspect-square bg-white/30 rounded-lg"></div>
+<div class="aspect-square bg-white/30 rounded-lg"></div>
+<div class="aspect-square bg-white/30 rounded-lg"></div>
+<div class="aspect-square bg-white/30 rounded-lg"></div>
+<div class="aspect-square bg-white/30 rounded-lg"></div>
+<div class="aspect-square bg-white/30 rounded-lg"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: SaleSection -->
+<!-- BEGIN: BlogSection -->
+<section class="py-20 bg-[--brand-bg-light]" data-purpose="stories-section">
+<div class="max-w-7xl mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold mb-4">Design Stories &amp; Trips</h2>
+<p class="text-gray-500">Simple idea for mordren living</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Blog Card -->
+<article class="bg-white rounded-lg overflow-hidden shadow-sm">
+<div class="relative h-64">
+<img alt="How to style a Nordic Chair" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2ec145zmhNtL_X41bVts-gyD8t766EVU12y0UdXdQh_wiqM6as2lsOkhwznXpedp4c0hLAFP4P5Plku0v8WmCPYXJ2yjPT7voxxzAKobDaJ-TO1pf36BlsJ02ufbfzRaCPTm6SmN8rvR_OK9JXqRpYkrftB-imFyEAaIwswpp-M-xTWnFiAVC6-iHsyqA-LqiZIGqbRcxftRSafJWQeU104TxgImI7ySl1C_qXRBvcHzZ1i6uDSw_pw">
+<span class="absolute top-4 left-4 bg-white/90 px-3 py-1 text-xs font-semibold rounded">Tips</span>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-3 leading-tight">How to style a Nordic Chair</h3>
+<p class="text-gray-500 text-sm mb-4">Tips and inspiration for making your nordic chair</p>
+<a class="font-bold border-b-2 border-black pb-1 inline-block text-sm" href="#">Read More</a>
 </div>
 </article>
-<!-- Story 2 -->
-<article class="bg-white rounded-lg overflow-hidden group occlusion-shadow flex flex-col h-full">
-<div class="relative overflow-hidden aspect-[16/10]">
-<span class="absolute top-4 left-4 bg-white/80 backdrop-blur-sm text-[10px] font-bold px-3 py-1 rounded-full uppercase z-10">Furniture</span>
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="High-angle shot of a minimalist wooden desk setup in a bright home office. The furniture is clean-lined, and the desk is uncluttered except for a single designer lamp. Soft morning shadows create a peaceful workspace ambiance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_AuURImH3H7Zg69xrx5zLDR07aWUBGO45EgkCnjpLumwdwKqvpMOKey2Re4gGo9xeyN-_MsFesz4fAPmc5eS5YhpIxn5A2j7ou4ipgf4BUKIkWVb5CIvsBVWBpXtK91KgAS5Gbm1oXz7Znqow0hMg3a_Y1Hdk321lQtVJoiV_mW4xBUqFsPikCSdNCtyagL7A1NcOfBCtK5KO0pB8RIom15JI3RaVoubAZ_wC4stWBfO0x6ismRtKrw"/>
+<!-- Blog Card 2 -->
+<article class="bg-white rounded-lg overflow-hidden shadow-sm">
+<div class="relative h-64">
+<img alt="How to style a Nordic Chair" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCspVc0P7zzRnQbzVapkOF4P0qtBZ1DBe_GSmNwJ_vmyAHhRY62n4M1PnMupyOCRuzIOy6cu0D0kMX3g5676aGYfFoZb6BMD-iEdtlADsHW1eWDp3Aatp7ReaJWmn-2iwo8xiV4cFSvtByFLaHVjseC1PanADi9RpiXizQcRO8SEtWVMryttqMGX9PFVrtyvuhRtbrPK-c5ofYD_npUJjIstE0_1xM_CiTj5Bvemc6Z6LRPrdDq92_XTQ">
+<span class="absolute top-4 left-4 bg-white/90 px-3 py-1 text-xs font-semibold rounded">Furniture</span>
 </div>
-<div class="p-unit-md flex flex-col flex-grow">
-<h3 class="text-headline-md font-headline-md mb-2">Sustainable Modernism</h3>
-<p class="text-on-surface-variant text-body-md mb-4 line-clamp-2">Why choosing sustainably sourced wood is the future of home interior design and environmental health.</p>
-<a class="mt-auto text-primary font-bold text-label-md flex items-center group/link" href="#">
-                            Read More
-                            <span class="material-symbols-outlined ml-1 group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
-</a>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-3 leading-tight">How to style a Nordic Chair</h3>
+<p class="text-gray-500 text-sm mb-4">Tips and inspiration for making your nordic chair</p>
+<a class="font-bold border-b-2 border-black pb-1 inline-block text-sm" href="#">Read More</a>
 </div>
 </article>
-<!-- Story 3 -->
-<article class="bg-white rounded-lg overflow-hidden group occlusion-shadow flex flex-col h-full">
-<div class="relative overflow-hidden aspect-[16/10]">
-<span class="absolute top-4 left-4 bg-white/80 backdrop-blur-sm text-[10px] font-bold px-3 py-1 rounded-full uppercase z-10">Guide</span>
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Elegant interior scene showcasing a minimalist sofa with neutral throw pillows against a lime-washed wall. Architectural simplicity and balanced proportions create a gallery-like feeling in a residential space." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9kppu6HYsO6b5eVIjuuZYkJC35Uu8h4PJk4X5GlMhxbV1WxqqDmNSRqVNhcOTK6PU91B1zxbpjzdXZUz4lS26ntkq7upjWnF3bC9lS-dGVwgQDo4y6SDRBiCJw0mpfkjuO8hPDPSXPLl3vVS7Ajjvk0W2g_KoxMkTdAGHr_fRUJayBMESuDiAAvoVJpmyzxzQfcdalhfGv36NQ0pRJoMCQSEcmSMogrRyf65jE55TzhyE5bXLCci-Eg"/>
+<!-- Blog Card 3 -->
+<article class="bg-white rounded-lg overflow-hidden shadow-sm">
+<div class="relative h-64">
+<img alt="How to style a Nordic Chair" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJiI3_Dhiee2VbLc6jl9b0TfO4m9YjJRX1XREEFwiXkbhlolBir-Om1EllHXJ0MTNM7pCjMduF_gBuBFhNhojoe8BPKwEc01uC6rtIKc1h0e2PkRUelRe9Nhgikb7ZKeJMY490JBX6A90l23g0ycx92cbXF28HdaY47aB5hePiduOmDdwJnf6I2HzwkyI4N6-41dsZfSvx-51WafyCRrIU14rpTT0qSDJDISQ9PKznD4IC5u_sB-Pvaw">
+<span class="absolute top-4 left-4 bg-white/90 px-3 py-1 text-xs font-semibold rounded">Guide</span>
 </div>
-<div class="p-unit-md flex flex-col flex-grow">
-<h3 class="text-headline-md font-headline-md mb-2">Space-Saving Mastery</h3>
-<p class="text-on-surface-variant text-body-md mb-4 line-clamp-2">Creative ways to utilize multifunctional furniture in small urban apartments without sacrificing style.</p>
-<a class="mt-auto text-primary font-bold text-label-md flex items-center group/link" href="#">
-                            Read More
-                            <span class="material-symbols-outlined ml-1 group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
-</a>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-3 leading-tight">How to style a Nordic Chair</h3>
+<p class="text-gray-500 text-sm mb-4">Tips and inspiration for making your nordic chair</p>
+<a class="font-bold border-b-2 border-black pb-1 inline-block text-sm" href="#">Read More</a>
 </div>
 </article>
 </div>
+</div>
 </section>
-<!-- Testimonials -->
-<section class="py-unit-xl px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-<div class="text-center mb-unit-lg">
-<h2 class="text-headline-lg font-headline-lg mb-unit-xs">Loved by our customer</h2>
-<p class="text-body-md text-on-surface-variant">Real stories from real home</p>
+<!-- END: BlogSection -->
+<!-- BEGIN: Testimonials -->
+<section class="py-20 bg-white" data-purpose="customer-reviews">
+<div class="max-w-7xl mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold mb-4">Loved by our cutomer</h2>
+<p class="text-gray-500">Real stories from real home</p>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-unit-lg">
-<!-- Testimonial 1 -->
-<div class="bg-white p-unit-lg rounded-xl occlusion-shadow border border-surface-container">
-<div class="flex gap-1 text-primary-container mb-unit-md">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Review Card -->
+<div class="bg-white p-8 rounded-xl border border-gray-100 shadow-lg">
+<div class="flex gap-1 mb-4">
+<!-- Empty stars as per design -->
+<span class="text-xl">☆☆☆☆☆</span>
 </div>
-<p class="text-body-lg italic mb-unit-lg">"The chair quality was so good and delivery was fast. Perfect for my living room - it has completely transformed the reading corner into my favorite spot in the house."</p>
+<p class="text-gray-700 font-medium mb-8">"The chir quality was so good and delivery was fast. perfect for my living room"</p>
 <div class="flex items-center gap-4">
-<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container">
-<img class="w-full h-full object-cover" data-alt="Portrait of a satisfied customer, Emma R., in a brightly lit, modern apartment. She has a warm, professional appearance, reflecting the discerning audience of the brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuATNx71cXk6PNnCL-v9pAk8um-KOkvUu6poVsUxsshg0YOHYeIKPy5AgQ85e-z3yHhzeCvX26aGLQe5BAvVGR6apo-dYK6M20uO1enBy9q634wZ94tU_5M1m8JKDNpshi4hweZ2_CuRNjSzdJw9w5eLSRcryxGldl8IqNjt9xR0LIrKoe5rpjqXYAeiAl38Zih72rM-IPteYBnohanx4bn_640mp2BGiAtUfIgpYjilhDT-Jqg3weOriQ"/>
-</div>
+<div class="w-12 h-12 bg-gray-200 rounded-full"></div>
 <div>
-<h4 class="text-label-md font-bold">Emma R.</h4>
-<p class="text-label-sm text-on-surface-variant">New York</p>
+<p class="font-bold">Emma R.</p>
+<p class="text-sm text-gray-500">New York</p>
 </div>
 </div>
 </div>
-<!-- Testimonial 2 -->
-<div class="bg-white p-unit-lg rounded-xl occlusion-shadow border border-surface-container">
-<div class="flex gap-1 text-primary-container mb-unit-md">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<!-- Review Card 2 -->
+<div class="bg-white p-8 rounded-xl border border-gray-100 shadow-lg">
+<div class="flex gap-1 mb-4">
+<span class="text-xl">☆☆☆☆☆</span>
 </div>
-<p class="text-body-lg italic mb-unit-lg">"Absolutely love the walnut finish on the bedside tables. The craftsmanship is evident, and they feel incredibly sturdy yet elegant. Tykea is now my go-to for furniture."</p>
+<p class="text-gray-700 font-medium mb-8">"The chir quality was so good and delivery was fast. perfect for my living room"</p>
 <div class="flex items-center gap-4">
-<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container">
-<img class="w-full h-full object-cover" data-alt="Portrait of a satisfied customer, James K., in a minimalist home office. He is smiling warmly, representing a customer who values quality and design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFeNHk_ZDpW7OJ4pnDm5EMw2C8qTHW047e1_PM07CkLuBYfPYAUt2PZX-KKOAsaGar4gRA1Qzn8PuDZX2TP4lm6oHdWAIxDBTiBMtwau6NvZKpjvvdxytTthFeEfoGnNMFbr6mAF0H0_UGAozzjcURRBvkndzXOIKqS9nUP2lpE8Yesp_B4veLj2Rbpw0tQ-VetQGx_MAUf9k4Boi0XFuwVUE7HI7_Q3GMDR3vjiskjKspgw5AlihqOA"/>
-</div>
+<div class="w-12 h-12 bg-gray-200 rounded-full"></div>
 <div>
-<h4 class="text-label-md font-bold">James K.</h4>
-<p class="text-label-sm text-on-surface-variant">London</p>
+<p class="font-bold">Emma R.</p>
+<p class="text-sm text-gray-500">New York</p>
 </div>
 </div>
 </div>
 </div>
-</section>
-<!-- Track Order Widget -->
-<section class="py-unit-xl bg-secondary-container/30">
-<div class="px-margin-mobile md:px-margin-desktop max-w-xl mx-auto text-center">
-<h2 class="text-headline-lg font-headline-lg mb-unit-lg">Track your order</h2>
-<div class="flex flex-col md:flex-row gap-4">
-<input class="flex-grow rounded bg-white border border-outline-variant px-6 py-4 text-label-md focus:ring-primary focus:border-primary" placeholder="Enter Order ID" type="text"/>
-<button class="bg-tertiary-fixed text-on-tertiary-fixed font-label-md px-8 py-4 rounded hover:bg-tertiary-fixed-dim transition-colors shadow-sm">Track Order</button>
-</div>
-<p class="mt-4 text-label-md text-on-surface-variant">Need help? <a class="text-primary font-bold underline" href="#">Contact support</a></p>
 </div>
 </section>
+<!-- END: Testimonials -->
+<!-- BEGIN: OrderTracking -->
+<section class="py-16 bg-[--brand-bg-muted]" data-purpose="order-tracking-form">
+<div class="max-w-4xl mx-auto px-4 text-center">
+<h2 class="text-3xl font-bold mb-10">Track your order</h2>
+<div class="flex flex-col sm:flex-row justify-center gap-0 max-w-lg mx-auto">
+<input class="flex-1 px-6 py-4 rounded-l-md border-none focus:ring-2 focus:ring-[--brand-brown]" placeholder="Enter Order ID" type="text">
+<button class="bg-[#eeb435] text-gray-800 font-bold px-8 py-4 rounded-r-md hover:bg-[#d9a32c] transition-colors whitespace-nowrap">
+            Track Order
+          </button>
+</div>
+<p class="mt-8 text-gray-600">Need help? <a class="underline" href="#">Contact support</a></p>
+</div>
+</section>
+<!-- END: OrderTracking -->
 </main>
-<!-- Footer -->
-<footer class="bg-secondary-container dark:bg-on-secondary-fixed-variant text-on-secondary-container py-unit-xl">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-unit-lg">
-<!-- Brand & Description -->
-<div class="space-y-4">
-<h2 class="text-headline-md font-headline-md font-bold text-on-secondary-container dark:text-secondary-fixed">Tykea</h2>
-<p class="text-body-md opacity-80">Relax in style with sofas & sectionals. Keep things organized with smart storage solutions. Sustainable quality for the modern home.</p>
-<div class="flex gap-4 pt-2">
-<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">share</span></a>
-<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">camera</span></a>
-<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+<!-- BEGIN: Footer -->
+<footer class="bg-[--brand-bg-muted] pt-16 pb-8 border-t border-gray-300">
+<div class="max-w-7xl mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="md:col-span-1">
+<div class="flex items-center gap-2 mb-6"><a class="flex items-center gap-2" href="index.html"><div class="w-10 h-10 bg-gray-300 rounded"></div><span class="font-bold text-2xl tracking-tight">Tykea</span></a></div>
+<p class="text-gray-500 leading-relaxed mb-8">
+            Relax in style with sofas &amp; sectionals. Keep things organized with smart storage solutions.
+          </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-black flex items-center justify-center text-white" href="#">𝕏</a>
+<a class="w-10 h-10 rounded-full bg-black flex items-center justify-center text-white" href="#"></a>
+<a class="w-10 h-10 rounded-full bg-black flex items-center justify-center text-white" href="#"></a>
 </div>
 </div>
-<!-- Explore -->
 <div>
-<h3 class="text-headline-sm font-headline-md mb-6">Explore</h3>
-<ul class="space-y-4">
-<li><a class="text-label-md hover:underline hover:text-primary transition-all" href="#">Living Room</a></li>
-<li><a class="text-label-md hover:underline hover:text-primary transition-all" href="#">Bedroom</a></li>
-<li><a class="text-label-md hover:underline hover:text-primary transition-all" href="#">Home Office</a></li>
-<li><a class="text-label-md hover:underline hover:text-primary transition-all" href="#">New Arrivals</a></li>
+<h4 class="font-bold text-xl mb-6">Explore</h4>
+<ul class="space-y-3 text-gray-600">
+<li class=""><a class="hover:text-black" href="#">Living Room</a></li>
+<li class=""><a class="hover:text-black" href="#">Bedroom</a></li>
+<li class=""><a class="hover:text-black" href="#">Home Office</a></li>
 </ul>
 </div>
-<!-- Company -->
 <div>
-<h3 class="text-headline-sm font-headline-md mb-6">Company</h3>
-<ul class="space-y-4">
-<li><a class="text-label-md hover:underline hover:text-primary transition-all" href="#">Careers</a></li>
-<li><a class="text-label-md hover:underline hover:text-primary transition-all" href="#">About us</a></li>
-<li><a class="text-label-md hover:underline hover:text-primary transition-all" href="#">Blogs</a></li>
-<li><a class="text-label-md hover:underline hover:text-primary transition-all" href="#">Contact</a></li>
+<h4 class="font-bold text-xl mb-6">Company</h4>
+<ul class="space-y-3 text-gray-600">
+<li class=""><a class="hover:text-black" href="#">Careers</a></li>
+<li class=""><a class="hover:text-black" href="about.html">About us</a></li>
+<li class=""><a class="hover:text-black" href="#">Blogs</a></li>
+<li class=""><a class="hover:text-black" href="#">Contact</a></li>
 </ul>
 </div>
-<!-- Support -->
 <div>
-<h3 class="text-headline-sm font-headline-md mb-6">Support</h3>
-<ul class="space-y-4">
-<li><a class="text-label-md hover:underline hover:text-primary transition-all" href="#">Order Tracking</a></li>
-<li><a class="text-label-md hover:underline hover:text-primary transition-all" href="#">Customer support</a></li>
-<li><a class="text-label-md hover:underline hover:text-primary transition-all" href="#">Privacy Policy</a></li>
-<li><a class="text-label-md hover:underline hover:text-primary transition-all" href="#">Terms of Service</a></li>
+<h4 class="font-bold text-xl mb-6">Support</h4>
+<ul class="space-y-3 text-gray-600">
+<li class=""><a class="hover:text-black" href="#">Order Tracking</a></li>
+<li class=""><a class="hover:text-black" href="#">Customer support</a></li>
 </ul>
 </div>
 </div>
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-unit-xl pt-unit-md border-t border-outline-variant/30 text-center">
-<p class="text-label-sm opacity-60">© 2024 Tykea Furniture. All rights reserved.</p>
 </div>
 </footer>
-<script>
-        // Smooth reveal on scroll interaction
-        document.addEventListener('DOMContentLoaded', () => {
-            const observerOptions = {
-                threshold: 0.1
-            };
+<!-- END: Footer -->
 
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('opacity-100', 'translate-y-0');
-                        entry.target.classList.remove('opacity-0', 'translate-y-8');
-                    }
-                });
-            }, observerOptions);
 
-            document.querySelectorAll('section').forEach(section => {
-                section.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-8');
-                observer.observe(section);
-            });
-        });
-    </script>
 </body></html>
