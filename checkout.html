@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-
-<html class="scroll-smooth" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>Tykea - Shipping &amp; Payment</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&amp;family=Manrope:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&amp;family=Manrope:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <!-- Tailwind Theme Config -->
 <script id="tailwind-config">
       tailwind.config = {
@@ -122,12 +120,12 @@
 <nav class="bg-surface border-b border-outline-variant fixed top-0 w-full z-50">
 <div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
 <div class="flex items-center gap-unit-lg">
-<a class="text-headline-md font-headline-md font-bold text-on-surface" href="#">Tykea</a>
+<a class="text-headline-md font-headline-md font-bold text-on-surface" href="index.html">Tykea</a>
 <div class="hidden md:flex items-center gap-unit-md ml-unit-xl">
-<a class="text-label-md font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Collection</a>
-<a class="text-label-md font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">About</a>
+<a class="text-label-md font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="collection.html">Collection</a>
+<a class="text-label-md font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="about.html">About</a>
 <a class="text-label-md font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Blog</a>
-<a class="text-label-md font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Returns &amp; Refunds</a>
+<a class="text-label-md font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="return.html">Returns &amp; Refunds</a>
 </div>
 </div>
 <div class="flex items-center gap-unit-md">
@@ -138,10 +136,7 @@
 <button class="p-2 hover:bg-surface-container rounded-full transition-colors">
 <span class="material-symbols-outlined text-on-surface">favorite</span>
 </button>
-<button class="p-2 hover:bg-surface-container rounded-full transition-colors relative">
-<span class="material-symbols-outlined text-on-surface">shopping_cart</span>
-<span class="absolute top-1 right-1 w-2 h-2 bg-primary rounded-full"></span>
-</button>
+<a href="cart.html" class="p-2 hover:bg-surface-container rounded-full transition-colors relative flex items-center justify-center"><span class="material-symbols-outlined text-on-surface">shopping_cart</span><span class="absolute top-1 right-1 w-2 h-2 bg-primary rounded-full"></span></a>
 </div>
 <button class="text-label-md font-label-md text-on-surface hover:text-primary transition-colors px-4 py-2">Login</button>
 </div>
@@ -160,22 +155,22 @@
 <h2 class="text-headline-md font-headline-md text-on-surface mb-6">Billing Details</h2>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-unit-md">
 <div class="space-y-1">
-<input class="w-full h-12 px-4 bg-surface border border-outline-variant rounded focus:border-primary focus:ring-1 focus:ring-primary outline-none text-body-md" placeholder="First Name" type="text"/>
+<input class="w-full h-12 px-4 bg-surface border border-outline-variant rounded focus:border-primary focus:ring-1 focus:ring-primary outline-none text-body-md" placeholder="First Name" type="text">
 </div>
 <div class="space-y-1">
-<input class="w-full h-12 px-4 bg-surface border border-outline-variant rounded focus:border-primary focus:ring-1 focus:ring-primary outline-none text-body-md" placeholder="Last Name" type="text"/>
+<input class="w-full h-12 px-4 bg-surface border border-outline-variant rounded focus:border-primary focus:ring-1 focus:ring-primary outline-none text-body-md" placeholder="Last Name" type="text">
 </div>
 <div class="space-y-1">
-<input class="w-full h-12 px-4 bg-surface border border-outline-variant rounded focus:border-primary focus:ring-1 focus:ring-primary outline-none text-body-md" placeholder="Email Address" type="email"/>
+<input class="w-full h-12 px-4 bg-surface border border-outline-variant rounded focus:border-primary focus:ring-1 focus:ring-primary outline-none text-body-md" placeholder="Email Address" type="email">
 </div>
 <div class="space-y-1">
-<input class="w-full h-12 px-4 bg-surface border border-outline-variant rounded focus:border-primary focus:ring-1 focus:ring-primary outline-none text-body-md" placeholder="Town / City" type="text"/>
+<input class="w-full h-12 px-4 bg-surface border border-outline-variant rounded focus:border-primary focus:ring-1 focus:ring-primary outline-none text-body-md" placeholder="Town / City" type="text">
 </div>
 <div class="space-y-1">
-<input class="w-full h-12 px-4 bg-surface border border-outline-variant rounded focus:border-primary focus:ring-1 focus:ring-primary outline-none text-body-md" placeholder="Country" type="text"/>
+<input class="w-full h-12 px-4 bg-surface border border-outline-variant rounded focus:border-primary focus:ring-1 focus:ring-primary outline-none text-body-md" placeholder="Country" type="text">
 </div>
 <div class="space-y-1">
-<input class="w-full h-12 px-4 bg-surface border border-outline-variant rounded focus:border-primary focus:ring-1 focus:ring-primary outline-none text-body-md" placeholder="Nearby Famous Place" type="text"/>
+<input class="w-full h-12 px-4 bg-surface border border-outline-variant rounded focus:border-primary focus:ring-1 focus:ring-primary outline-none text-body-md" placeholder="Nearby Famous Place" type="text">
 </div>
 </div>
 </section>
@@ -183,9 +178,9 @@
 <section>
 <h2 class="text-headline-md font-headline-md text-on-surface mb-6">Street Address</h2>
 <div class="space-y-unit-md">
-<input class="w-full h-12 px-4 bg-surface border border-outline-variant rounded focus:border-primary focus:ring-1 focus:ring-primary outline-none text-body-md" placeholder="House number and street name" type="text"/>
-<input class="w-full h-12 px-4 bg-surface border border-outline-variant rounded focus:border-primary focus:ring-1 focus:ring-primary outline-none text-body-md" placeholder="Apartment, unit, etc." type="text"/>
-<input class="w-full h-12 px-4 bg-surface border border-outline-variant rounded focus:border-primary focus:ring-1 focus:ring-primary outline-none text-body-md" placeholder="Phone number" type="tel"/>
+<input class="w-full h-12 px-4 bg-surface border border-outline-variant rounded focus:border-primary focus:ring-1 focus:ring-primary outline-none text-body-md" placeholder="House number and street name" type="text">
+<input class="w-full h-12 px-4 bg-surface border border-outline-variant rounded focus:border-primary focus:ring-1 focus:ring-primary outline-none text-body-md" placeholder="Apartment, unit, etc." type="text">
+<input class="w-full h-12 px-4 bg-surface border border-outline-variant rounded focus:border-primary focus:ring-1 focus:ring-primary outline-none text-body-md" placeholder="Phone number" type="tel">
 </div>
 </section>
 <!-- Delivery Order Notes Section -->
@@ -198,19 +193,19 @@
 <h2 class="text-headline-md font-headline-md text-on-surface mb-6">Payment Method</h2>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-unit-md mb-unit-lg">
 <label class="cursor-pointer">
-<input checked="" class="hidden peer" name="payment_method" type="radio" value="debit"/>
+<input checked="" class="hidden peer" name="payment_method" type="radio" value="debit">
 <div class="flex items-center justify-center h-16 border border-outline-variant rounded bg-surface peer-checked:bg-primary-container peer-checked:text-on-primary-container peer-checked:border-primary transition-all">
 <span class="font-label-md text-label-md">Debit Card</span>
 </div>
 </label>
 <label class="cursor-pointer">
-<input class="hidden peer" name="payment_method" type="radio" value="transfer"/>
+<input class="hidden peer" name="payment_method" type="radio" value="transfer">
 <div class="flex items-center justify-center h-16 border border-outline-variant rounded bg-surface peer-checked:bg-primary-container peer-checked:text-on-primary-container peer-checked:border-primary transition-all">
 <span class="font-label-md text-label-md">Online Transfer</span>
 </div>
 </label>
 <label class="cursor-pointer">
-<input class="hidden peer" name="payment_method" type="radio" value="cash"/>
+<input class="hidden peer" name="payment_method" type="radio" value="cash">
 <div class="flex items-center justify-center h-16 border border-outline-variant rounded bg-surface peer-checked:bg-primary-container peer-checked:text-on-primary-container peer-checked:border-primary transition-all">
 <span class="font-label-md text-label-md">Cash on Delivery</span>
 </div>
@@ -219,10 +214,10 @@
 <!-- Card Details Form (Conditional visual logic) -->
 <div class="space-y-unit-md p-unit-md bg-surface/50 rounded-lg" id="card-form">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-unit-md">
-<input class="w-full h-12 px-4 bg-surface border border-outline-variant rounded focus:border-primary outline-none text-body-md" placeholder="Card Number" type="text"/>
-<input class="w-full h-12 px-4 bg-surface border border-outline-variant rounded focus:border-primary outline-none text-body-md" placeholder="(MM/YY)" type="text"/>
-<input class="w-full h-12 px-4 bg-surface border border-outline-variant rounded focus:border-primary outline-none text-body-md" placeholder="Security Code" type="password"/>
-<input class="w-full h-12 px-4 bg-surface border border-outline-variant rounded focus:border-primary outline-none text-body-md" placeholder="Name on Card" type="text"/>
+<input class="w-full h-12 px-4 bg-surface border border-outline-variant rounded focus:border-primary outline-none text-body-md" placeholder="Card Number" type="text">
+<input class="w-full h-12 px-4 bg-surface border border-outline-variant rounded focus:border-primary outline-none text-body-md" placeholder="(MM/YY)" type="text">
+<input class="w-full h-12 px-4 bg-surface border border-outline-variant rounded focus:border-primary outline-none text-body-md" placeholder="Security Code" type="password">
+<input class="w-full h-12 px-4 bg-surface border border-outline-variant rounded focus:border-primary outline-none text-body-md" placeholder="Name on Card" type="text">
 </div>
 </div>
 </section>
@@ -279,38 +274,38 @@
 <p class="text-body-md font-body-md text-on-secondary-container max-w-xs">Relax in style with sofas &amp; sectionals. Keep things organized with smart storage solutions.</p>
 <div class="flex items-center gap-4 pt-2">
 <a class="p-2 border border-outline-variant rounded hover:bg-surface/20 transition-colors" href="#">
-<img alt="X Social" class="w-5 h-5 opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBelv2TH1ySvNJBjQP0kx4J5NRpwlgmnuLAPsN_k_1a5EShTQ3T6D9Ylg463jRiomaie0GcS8yZP6M1e2FtoUcamUdePBKouFP5jhdGh8P2sbcOtNbsPSAzJcbNJFeEhC7hKVqfxfIi1i3EkPzggq3mDeR4YKJF1h9rUn4moiy-iBlHG0BDiUEP9Oz2qeuSCihou8TrPKmY9ufuMqOcnBctsxAo8Kdvwqdu4FNhWo6vTOUTQqX0N6f49Q"/>
+<img alt="X Social" class="w-5 h-5 opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBelv2TH1ySvNJBjQP0kx4J5NRpwlgmnuLAPsN_k_1a5EShTQ3T6D9Ylg463jRiomaie0GcS8yZP6M1e2FtoUcamUdePBKouFP5jhdGh8P2sbcOtNbsPSAzJcbNJFeEhC7hKVqfxfIi1i3EkPzggq3mDeR4YKJF1h9rUn4moiy-iBlHG0BDiUEP9Oz2qeuSCihou8TrPKmY9ufuMqOcnBctsxAo8Kdvwqdu4FNhWo6vTOUTQqX0N6f49Q">
 </a>
 <a class="p-2 border border-outline-variant rounded hover:bg-surface/20 transition-colors" href="#">
-<img alt="Instagram" class="w-5 h-5 opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7j4sQsDBuU6Wxdf0vNSZfFzvbaxTWawpOXFyjunGKR7IN3v7Q303SQNGHupLwJpda9IJW-Aq_2Q6kABziyaMxHV6ciCmoItTt0nF1mh959a-o72KtJlGb9nsFqIJqXio8ZktdYga7aMgmtlWDjBtN9JmmCxJ3vn9JX52kWd3-mnavk9o10bfabx-ghmztXVWXB4PQG7THIH3KgU3naO8oA-NuAkCvm38og1A4R5h8IHjUmMC82CsDGQ"/>
+<img alt="Instagram" class="w-5 h-5 opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7j4sQsDBuU6Wxdf0vNSZfFzvbaxTWawpOXFyjunGKR7IN3v7Q303SQNGHupLwJpda9IJW-Aq_2Q6kABziyaMxHV6ciCmoItTt0nF1mh959a-o72KtJlGb9nsFqIJqXio8ZktdYga7aMgmtlWDjBtN9JmmCxJ3vn9JX52kWd3-mnavk9o10bfabx-ghmztXVWXB4PQG7THIH3KgU3naO8oA-NuAkCvm38og1A4R5h8IHjUmMC82CsDGQ">
 </a>
 <a class="p-2 border border-outline-variant rounded hover:bg-surface/20 transition-colors" href="#">
-<img alt="LinkedIn" class="w-5 h-5 opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkHtLhGw14PYtiraTSldQ4A3U7x4XA6TfWmV1mX02GAPVUSiLkPKoa737YVFhCm1YPAKJqYEaR-DFygtzyGfxo6hthm39xJZJjm9svQqyrvNtEy00In1ntWg53dt83-O0rNwnrpxtRoylFPvb8KOweGrGpAy6IfFEJIdJ_xEvG9bfrFjYGCKPDUrmh2kcBK2VerLxkYlF3H__C80M_pOo9As8dr3oBJvJQ9G1Rq5t1Jt9NIKTeLHFBHA"/>
+<img alt="LinkedIn" class="w-5 h-5 opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkHtLhGw14PYtiraTSldQ4A3U7x4XA6TfWmV1mX02GAPVUSiLkPKoa737YVFhCm1YPAKJqYEaR-DFygtzyGfxo6hthm39xJZJjm9svQqyrvNtEy00In1ntWg53dt83-O0rNwnrpxtRoylFPvb8KOweGrGpAy6IfFEJIdJ_xEvG9bfrFjYGCKPDUrmh2kcBK2VerLxkYlF3H__C80M_pOo9As8dr3oBJvJQ9G1Rq5t1Jt9NIKTeLHFBHA">
 </a>
 </div>
 </div>
 <div class="space-y-unit-md">
 <h4 class="text-headline-sm font-headline-md text-on-secondary-container">Explore</h4>
 <ul class="space-y-2">
-<li><a class="text-label-md font-label-md text-on-secondary-container hover:text-primary transition-colors duration-200" href="#">Living Room</a></li>
-<li><a class="text-label-md font-label-md text-on-secondary-container hover:text-primary transition-colors duration-200" href="#">Bedroom</a></li>
-<li><a class="text-label-md font-label-md text-on-secondary-container hover:text-primary transition-colors duration-200" href="#">Home Office</a></li>
+<li class=""><a class="text-label-md font-label-md text-on-secondary-container hover:text-primary transition-colors duration-200" href="#">Living Room</a></li>
+<li class=""><a class="text-label-md font-label-md text-on-secondary-container hover:text-primary transition-colors duration-200" href="#">Bedroom</a></li>
+<li class=""><a class="text-label-md font-label-md text-on-secondary-container hover:text-primary transition-colors duration-200" href="#">Home Office</a></li>
 </ul>
 </div>
 <div class="space-y-unit-md">
 <h4 class="text-headline-sm font-headline-md text-on-secondary-container">Company</h4>
 <ul class="space-y-2">
-<li><a class="text-label-md font-label-md text-on-secondary-container hover:text-primary transition-colors duration-200" href="#">Careers</a></li>
-<li><a class="text-label-md font-label-md text-on-secondary-container hover:text-primary transition-colors duration-200" href="#">About us</a></li>
-<li><a class="text-label-md font-label-md text-on-secondary-container hover:text-primary transition-colors duration-200" href="#">Blogs</a></li>
-<li><a class="text-label-md font-label-md text-on-secondary-container hover:text-primary transition-colors duration-200" href="#">Contact</a></li>
+<li class=""><a class="text-label-md font-label-md text-on-secondary-container hover:text-primary transition-colors duration-200" href="#">Careers</a></li>
+<li class=""><a class="text-label-md font-label-md text-on-secondary-container hover:text-primary transition-colors duration-200" href="about.html">About us</a></li>
+<li class=""><a class="text-label-md font-label-md text-on-secondary-container hover:text-primary transition-colors duration-200" href="#">Blogs</a></li>
+<li class=""><a class="text-label-md font-label-md text-on-secondary-container hover:text-primary transition-colors duration-200" href="#">Contact</a></li>
 </ul>
 </div>
 <div class="space-y-unit-md">
 <h4 class="text-headline-sm font-headline-md text-on-secondary-container">Support</h4>
 <ul class="space-y-2">
-<li><a class="text-label-md font-label-md text-on-secondary-container hover:text-primary transition-colors duration-200" href="#">Order Tracking</a></li>
-<li><a class="text-label-md font-label-md text-on-secondary-container hover:text-primary transition-colors duration-200" href="#">Customer support</a></li>
+<li class=""><a class="text-label-md font-label-md text-on-secondary-container hover:text-primary transition-colors duration-200" href="#">Order Tracking</a></li>
+<li class=""><a class="text-label-md font-label-md text-on-secondary-container hover:text-primary transition-colors duration-200" href="#">Customer support</a></li>
 </ul>
 </div>
 </div>
@@ -333,4 +328,6 @@
             });
         });
     </script>
+
+
 </body></html>

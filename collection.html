@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tykea | Living Room Collection</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&amp;family=Manrope:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#f0eded",
+                        "on-primary": "#ffffff",
+                        "surface-container-high": "#eae7e7",
+                        "surface-tint": "#805533",
+                        "tertiary-fixed": "#ffdf92",
+                        "surface-bright": "#fcf9f8",
+                        "primary": "#6f4627",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed": "#1e1b17",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#1c1b1b",
+                        "surface-dim": "#dcd9d9",
+                        "surface": "#fcf9f8",
+                        "inverse-surface": "#313030",
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#755b00",
+                        "secondary-fixed-dim": "#ccc6be",
+                        "on-secondary-fixed-variant": "#4a4641",
+                        "tertiary-container": "#d3a500",
+                        "secondary": "#625e58",
+                        "on-background": "#1c1b1b",
+                        "tertiary-fixed-dim": "#f2c025",
+                        "inverse-on-surface": "#f3f0ef",
+                        "primary-fixed-dim": "#f4bb92",
+                        "surface-variant": "#e5e2e1",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed": "#301400",
+                        "primary-container": "#8b5e3c",
+                        "outline": "#83746b",
+                        "primary-fixed": "#ffdcc5",
+                        "on-error-container": "#93000a",
+                        "surface-container-low": "#f6f3f2",
+                        "on-surface-variant": "#51443c",
+                        "on-tertiary-fixed-variant": "#594400",
+                        "on-primary-container": "#ffe3d1",
+                        "error-container": "#ffdad6",
+                        "error": "#ba1a1a",
+                        "surface-container-highest": "#e5e2e1",
+                        "secondary-fixed": "#e8e1da",
+                        "outline-variant": "#d5c3b8",
+                        "on-tertiary-container": "#503d00",
+                        "on-secondary-container": "#66625c",
+                        "on-primary-fixed-variant": "#653d1e",
+                        "on-tertiary-fixed": "#241a00",
+                        "background": "#fcf9f8",
+                        "secondary-container": "#e5dfd7",
+                        "inverse-primary": "#f4bb92"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "unit-xs": "4px",
+                        "container-max": "1280px",
+                        "unit-md": "16px",
+                        "margin-desktop": "64px",
+                        "unit-xl": "64px",
+                        "unit-lg": "32px",
+                        "unit-sm": "8px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["DM Sans"],
+                        "label-sm": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "label-md": ["Manrope"],
+                        "headline-lg-mobile": ["DM Sans"],
+                        "headline-md": ["DM Sans"],
+                        "display-lg": ["DM Sans"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "label-sm": ["12px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .nav-link {
+            letter-spacing: 0.15em;
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Header Section based on Reference -->
+<header class="bg-white pt-8 pb-4">
+<div class="max-w-[1440px] mx-auto px-margin-desktop">
+<div class="flex justify-between items-center mb-8">
+<div class="w-1/3"></div>
+<a class="w-1/3 text-center text-display-lg font-headline-lg tracking-tight" href="index.html">Tykea</a>
+<div class="w-1/3 flex justify-end items-center gap-6">
+<button class="hover:opacity-60 transition-opacity">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="hover:opacity-60 transition-opacity">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<a class="hover:opacity-60 transition-opacity" href="cart.html"><span class="material-symbols-outlined">shopping_cart</span></a>
+<button class="hover:opacity-60 transition-opacity">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</div>
+<!-- Category Sub-navigation based on Image 14 -->
+<nav class="flex justify-center items-center gap-12 text-[18px] font-medium text-on-surface/80">
+<a class="nav-link text-on-surface" href="#">Living</a>
+<span class="text-on-surface-variant/30">|</span>
+<a class="nav-link hover:text-on-surface transition-colors" href="#">Bedroom</a>
+<span class="text-on-surface-variant/30">|</span>
+<a class="nav-link hover:text-on-surface transition-colors" href="#">Dining</a>
+<span class="text-on-surface-variant/30">|</span>
+<a class="nav-link hover:text-on-surface transition-colors" href="#">Office</a>
+<span class="text-on-surface-variant/30">|</span>
+<a class="nav-link hover:text-on-surface transition-colors" href="#">Storage</a>
+</nav>
+</div>
+</header>
+<main class="max-w-[1440px] mx-auto px-margin-desktop py-unit-xl">
+<!-- Hero Title Section -->
+<section class="text-center mb-unit-xl">
+<h1 class="text-[40px] font-bold mb-6">Living</h1>
+<p class="max-w-[900px] mx-auto text-body-md text-on-surface-variant/80 leading-[1.8] font-light">
+            Relax in style with sofas &amp; sectionals. Keep things organized with smart storage solutions. Add a touch of elegance with coffee tables &amp; side tables. Enjoy your favorite shows with modern TV units.
+        </p>
+</section>
+<!-- Filter Bar (Minimal) -->
+<div class="flex justify-between items-center mb-unit-lg text-label-md text-on-surface-variant border-b border-surface-container pb-4">
+<span>Showing 8 products</span>
+<div class="flex gap-8">
+<button class="flex items-center gap-2 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">tune</span> Filter
+            </button>
+<button class="flex items-center gap-1 hover:text-primary transition-colors">
+                Sort By <span class="material-symbols-outlined text-[18px]">keyboard_arrow_down</span>
+</button>
+</div>
+</div>
+<!-- Product Grid based on Image 14 Layout -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-gutter gap-y-unit-xl">
+<!-- Item 1 -->
+<div class="group"><a class="block" href="product.html"><div class="relative aspect-square mb-6 overflow-hidden bg-[#f5f5f5]"><span class="absolute top-4 left-4 z-10 bg-[#e8e1da] text-on-surface-variant px-3 py-1 text-[13px] font-semibold">-36%</span><button class="absolute top-4 right-4 z-10 bg-white p-2 rounded-full shadow-sm hover:scale-110 transition-transform"><span class="material-symbols-outlined text-[20px]">favorite</span></button><img alt="Nordic Lounge Chair" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhKnAvq95I0cpDyzm7oUKFeooa43-B2JP0TikTaSgsFEgpGc_8IOqFl6sL8VOJiEinP29RuDRf3H5G0Kaz_wQhEo9tbUyfX3yRaEYEMCJ_GE6zoY6Z1dKA5PJ2JpGnmLwWkhwQxcuhSBMwdnAdYUmgCmn0zdrPP-pW1ax7c9nEqDnFbbcw8MPOy2DmyT4d6hTlbuFQDWM6PHvB8SCnRLXNKfIq_4EjaG9np1KshkjpCCRxd9i5nVdyng"/></div><div class="text-center"><h3 class="text-[18px] font-semibold mb-2">Nordic Lounge Chair</h3><p class="text-[16px] text-on-surface-variant font-medium">$ 330 <span class="ml-2 line-through opacity-40">$ 515</span></p></div></a></div>
+<!-- Item 2 -->
+<div class="group"><a class="block" href="product.html"><div class="relative aspect-square mb-6 overflow-hidden bg-[#f5f5f5]"><span class="absolute top-4 left-4 z-10 bg-[#e8e1da] text-on-surface-variant px-3 py-1 text-[13px] font-semibold">-36%</span><button class="absolute top-4 right-4 z-10 bg-white p-2 rounded-full shadow-sm hover:scale-110 transition-transform"><span class="material-symbols-outlined text-[20px]">favorite</span></button><img alt="Nordic Lounge Chair" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhKnAvq95I0cpDyzm7oUKFeooa43-B2JP0TikTaSgsFEgpGc_8IOqFl6sL8VOJiEinP29RuDRf3H5G0Kaz_wQhEo9tbUyfX3yRaEYEMCJ_GE6zoY6Z1dKA5PJ2JpGnmLwWkhwQxcuhSBMwdnAdYUmgCmn0zdrPP-pW1ax7c9nEqDnFbbcw8MPOy2DmyT4d6hTlbuFQDWM6PHvB8SCnRLXNKfIq_4EjaG9np1KshkjpCCRxd9i5nVdyng"/></div><div class="text-center"><h3 class="text-[18px] font-semibold mb-2">Nordic Lounge Chair</h3><p class="text-[16px] text-on-surface-variant font-medium">$ 330 <span class="ml-2 line-through opacity-40">$ 515</span></p></div></a></div>
+<!-- Item 3 -->
+<div class="group"><a class="block" href="product.html"><div class="relative aspect-square mb-6 overflow-hidden bg-[#f5f5f5]"><span class="absolute top-4 left-4 z-10 bg-[#e8e1da] text-on-surface-variant px-3 py-1 text-[13px] font-semibold">-36%</span><button class="absolute top-4 right-4 z-10 bg-white p-2 rounded-full shadow-sm hover:scale-110 transition-transform"><span class="material-symbols-outlined text-[20px]">favorite</span></button><img alt="Nordic Lounge Chair" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhKnAvq95I0cpDyzm7oUKFeooa43-B2JP0TikTaSgsFEgpGc_8IOqFl6sL8VOJiEinP29RuDRf3H5G0Kaz_wQhEo9tbUyfX3yRaEYEMCJ_GE6zoY6Z1dKA5PJ2JpGnmLwWkhwQxcuhSBMwdnAdYUmgCmn0zdrPP-pW1ax7c9nEqDnFbbcw8MPOy2DmyT4d6hTlbuFQDWM6PHvB8SCnRLXNKfIq_4EjaG9np1KshkjpCCRxd9i5nVdyng"/></div><div class="text-center"><h3 class="text-[18px] font-semibold mb-2">Nordic Lounge Chair</h3><p class="text-[16px] text-on-surface-variant font-medium">$ 330 <span class="ml-2 line-through opacity-40">$ 515</span></p></div></a></div>
+<!-- Item 4 -->
+<div class="group"><a class="block" href="product.html"><div class="relative aspect-square mb-6 overflow-hidden bg-[#f5f5f5]"><span class="absolute top-4 left-4 z-10 bg-[#e8e1da] text-on-surface-variant px-3 py-1 text-[13px] font-semibold">-36%</span><button class="absolute top-4 right-4 z-10 bg-white p-2 rounded-full shadow-sm hover:scale-110 transition-transform"><span class="material-symbols-outlined text-[20px]">favorite</span></button><img alt="Nordic Lounge Chair" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhKnAvq95I0cpDyzm7oUKFeooa43-B2JP0TikTaSgsFEgpGc_8IOqFl6sL8VOJiEinP29RuDRf3H5G0Kaz_wQhEo9tbUyfX3yRaEYEMCJ_GE6zoY6Z1dKA5PJ2JpGnmLwWkhwQxcuhSBMwdnAdYUmgCmn0zdrPP-pW1ax7c9nEqDnFbbcw8MPOy2DmyT4d6hTlbuFQDWM6PHvB8SCnRLXNKfIq_4EjaG9np1KshkjpCCRxd9i5nVdyng"/></div><div class="text-center"><h3 class="text-[18px] font-semibold mb-2">Nordic Lounge Chair</h3><p class="text-[16px] text-on-surface-variant font-medium">$ 330 <span class="ml-2 line-through opacity-40">$ 515</span></p></div></a></div>
+<!-- Item 5 -->
+<div class="group"><a class="block" href="product.html"><div class="relative aspect-square mb-6 overflow-hidden bg-[#f5f5f5]"><span class="absolute top-4 left-4 z-10 bg-[#e8e1da] text-on-surface-variant px-3 py-1 text-[13px] font-semibold">-36%</span><button class="absolute top-4 right-4 z-10 bg-white p-2 rounded-full shadow-sm hover:scale-110 transition-transform"><span class="material-symbols-outlined text-[20px]">favorite</span></button><img alt="Nordic Lounge Chair" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhKnAvq95I0cpDyzm7oUKFeooa43-B2JP0TikTaSgsFEgpGc_8IOqFl6sL8VOJiEinP29RuDRf3H5G0Kaz_wQhEo9tbUyfX3yRaEYEMCJ_GE6zoY6Z1dKA5PJ2JpGnmLwWkhwQxcuhSBMwdnAdYUmgCmn0zdrPP-pW1ax7c9nEqDnFbbcw8MPOy2DmyT4d6hTlbuFQDWM6PHvB8SCnRLXNKfIq_4EjaG9np1KshkjpCCRxd9i5nVdyng"/></div><div class="text-center"><h3 class="text-[18px] font-semibold mb-2">Nordic Lounge Chair</h3><p class="text-[16px] text-on-surface-variant font-medium">$ 330 <span class="ml-2 line-through opacity-40">$ 515</span></p></div></a></div>
+<!-- Item 6 -->
+<div class="group"><a class="block" href="product.html"><div class="relative aspect-square mb-6 overflow-hidden bg-[#f5f5f5]"><span class="absolute top-4 left-4 z-10 bg-[#e8e1da] text-on-surface-variant px-3 py-1 text-[13px] font-semibold">-36%</span><button class="absolute top-4 right-4 z-10 bg-white p-2 rounded-full shadow-sm hover:scale-110 transition-transform"><span class="material-symbols-outlined text-[20px]">favorite</span></button><img alt="Nordic Lounge Chair" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhKnAvq95I0cpDyzm7oUKFeooa43-B2JP0TikTaSgsFEgpGc_8IOqFl6sL8VOJiEinP29RuDRf3H5G0Kaz_wQhEo9tbUyfX3yRaEYEMCJ_GE6zoY6Z1dKA5PJ2JpGnmLwWkhwQxcuhSBMwdnAdYUmgCmn0zdrPP-pW1ax7c9nEqDnFbbcw8MPOy2DmyT4d6hTlbuFQDWM6PHvB8SCnRLXNKfIq_4EjaG9np1KshkjpCCRxd9i5nVdyng"/></div><div class="text-center"><h3 class="text-[18px] font-semibold mb-2">Nordic Lounge Chair</h3><p class="text-[16px] text-on-surface-variant font-medium">$ 330 <span class="ml-2 line-through opacity-40">$ 515</span></p></div></a></div>
+<!-- Item 7 -->
+<div class="group"><a class="block" href="product.html"><div class="relative aspect-square mb-6 overflow-hidden bg-[#f5f5f5]"><span class="absolute top-4 left-4 z-10 bg-[#e8e1da] text-on-surface-variant px-3 py-1 text-[13px] font-semibold">-36%</span><button class="absolute top-4 right-4 z-10 bg-white p-2 rounded-full shadow-sm hover:scale-110 transition-transform"><span class="material-symbols-outlined text-[20px]">favorite</span></button><img alt="Nordic Lounge Chair" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhKnAvq95I0cpDyzm7oUKFeooa43-B2JP0TikTaSgsFEgpGc_8IOqFl6sL8VOJiEinP29RuDRf3H5G0Kaz_wQhEo9tbUyfX3yRaEYEMCJ_GE6zoY6Z1dKA5PJ2JpGnmLwWkhwQxcuhSBMwdnAdYUmgCmn0zdrPP-pW1ax7c9nEqDnFbbcw8MPOy2DmyT4d6hTlbuFQDWM6PHvB8SCnRLXNKfIq_4EjaG9np1KshkjpCCRxd9i5nVdyng"/></div><div class="text-center"><h3 class="text-[18px] font-semibold mb-2">Nordic Lounge Chair</h3><p class="text-[16px] text-on-surface-variant font-medium">$ 330 <span class="ml-2 line-through opacity-40">$ 515</span></p></div></a></div>
+<!-- Item 8 -->
+<div class="group"><a class="block" href="product.html"><div class="relative aspect-square mb-6 overflow-hidden bg-[#f5f5f5]"><span class="absolute top-4 left-4 z-10 bg-[#e8e1da] text-on-surface-variant px-3 py-1 text-[13px] font-semibold">-36%</span><button class="absolute top-4 right-4 z-10 bg-white p-2 rounded-full shadow-sm hover:scale-110 transition-transform"><span class="material-symbols-outlined text-[20px]">favorite</span></button><img alt="Nordic Lounge Chair" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhKnAvq95I0cpDyzm7oUKFeooa43-B2JP0TikTaSgsFEgpGc_8IOqFl6sL8VOJiEinP29RuDRf3H5G0Kaz_wQhEo9tbUyfX3yRaEYEMCJ_GE6zoY6Z1dKA5PJ2JpGnmLwWkhwQxcuhSBMwdnAdYUmgCmn0zdrPP-pW1ax7c9nEqDnFbbcw8MPOy2DmyT4d6hTlbuFQDWM6PHvB8SCnRLXNKfIq_4EjaG9np1KshkjpCCRxd9i5nVdyng"/></div><div class="text-center"><h3 class="text-[18px] font-semibold mb-2">Nordic Lounge Chair</h3><p class="text-[16px] text-on-surface-variant font-medium">$ 330 <span class="ml-2 line-through opacity-40">$ 515</span></p></div></a></div>
+</div>
+<!-- Pagination -->
+<div class="mt-20 flex justify-center items-center gap-4">
+<button class="w-10 h-10 flex items-center justify-center rounded-full border border-outline-variant hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white font-semibold">1</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-full border border-outline-variant hover:bg-surface-container transition-colors">2</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-full border border-outline-variant hover:bg-surface-container transition-colors">3</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-full border border-outline-variant hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+</main>
+<!-- Footer based on Image 14 and 15 -->
+<footer class="bg-[#d2c2b0] pt-unit-xl pb-8">
+<div class="max-w-[1440px] mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-unit-xl mb-16">
+<!-- Brand Column -->
+<div class="col-span-1">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-10 h-10 bg-white/40 rounded-sm"></div>
+<span class="text-display-lg font-headline-lg tracking-tight">Tykea</span>
+</div>
+<p class="text-body-md leading-relaxed text-on-surface-variant/80 mb-8 max-w-xs">
+                    Relax in style with sofas &amp; sectionals. Keep things organized with smart storage solutions.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 bg-black text-white flex items-center justify-center rounded-sm hover:opacity-80 transition-opacity" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+</a>
+<a class="w-10 h-10 bg-black text-white flex items-center justify-center rounded-sm hover:opacity-80 transition-opacity" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.332 3.608 1.308.975.975 1.245 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.063 1.366-.333 2.633-1.308 3.608-.975.975-2.242 1.245-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.063-2.633-.333-3.608-1.308-.975-.975-1.245-2.242-1.308-3.608-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.063-1.366.333-2.633 1.308-3.608.975-.975 2.242-1.245 3.608-1.308 1.266-.058 1.646-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-1.303.06-2.193.267-2.97.57a5.92 5.92 0 0 0-2.14 1.392 5.92 5.92 0 0 0-1.392 2.14c-.303.777-.51 1.668-.57 2.97-.058 1.28-.072 1.688-.072 4.947s.014 3.667.072 4.947c.06 1.303.267 2.193.57 2.97a5.92 5.92 0 0 0 1.392 2.14 5.92 5.92 0 0 0 2.14 1.392c.777.303 1.668.51 2.97.57 1.28.058 1.688.072 4.947.072s3.667-.014 4.947-.072c1.303-.06 2.193-.267 2.97-.57a5.92 5.92 0 0 0 2.14-1.392 5.92 5.92 0 0 0 1.392-2.14c.303-.777.51-1.668.57-2.97.058-1.28.072-1.688.072-4.947s-.014-3.667-.072-4.947c-.06-1.303-.267-2.193-.57-2.97a5.92 5.92 0 0 0-1.392-2.14 5.92 5.92 0 0 0-2.14-1.392c-.777-.303-1.668-.51-2.97-.57-1.28-.058-1.688-.072-4.947-.072z"></path><path d="M12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"></path></svg>
+</a>
+<a class="w-10 h-10 bg-black text-white flex items-center justify-center rounded-sm hover:opacity-80 transition-opacity" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</a>
+</div>
+</div>
+<!-- Links Columns -->
+<div class="col-span-1">
+<h3 class="text-headline-md font-bold mb-6">Explore</h3>
+<ul class="space-y-4">
+<li><a class="text-body-md hover:text-white transition-colors" href="#">Living Room</a></li>
+<li><a class="text-body-md hover:text-white transition-colors" href="#">Bedroom</a></li>
+<li><a class="text-body-md hover:text-white transition-colors" href="#">Home Office</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h3 class="text-headline-md font-bold mb-6">Company</h3>
+<ul class="space-y-4">
+<li><a class="text-body-md hover:text-white transition-colors" href="#">Careers</a></li>
+<li><a class="text-body-md hover:text-white transition-colors" href="about.html">About us</a></li>
+<li><a class="text-body-md hover:text-white transition-colors" href="#">Blogs</a></li>
+<li><a class="text-body-md hover:text-white transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h3 class="text-headline-md font-bold mb-6">Support</h3>
+<ul class="space-y-4">
+<li><a class="text-body-md hover:text-white transition-colors" href="#">Order Tracking</a></li>
+<li><a class="text-body-md hover:text-white transition-colors" href="#">Customer support</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-black/10 pt-8 flex flex-col md:flex-row justify-between items-center text-on-surface-variant/60 text-label-md">
+<p>© 2024 Tykea Furniture. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<!-- Interaction Script -->
+<script>
+    // Simple heart icon toggle
+    document.querySelectorAll('button span.material-symbols-outlined').forEach(icon => {
+        if (icon.textContent === 'favorite') {
+            icon.parentElement.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                const isFilled = icon.style.fontVariationSettings.includes("'FILL' 1");
+                icon.style.fontVariationSettings = isFilled ? "'FILL' 0" : "'FILL' 1";
+                if(!isFilled) {
+                    icon.classList.add('text-error');
+                } else {
+                    icon.classList.remove('text-error');
+                }
+            });
+        }
+    });
+</script>
+</body></html>
